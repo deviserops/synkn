@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synkn</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- ==================================== -->
+    <!-- TAILWIND CONFIGURATION (Reusable)    -->
+    <!-- ==================================== -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-teal': '#14B8A6',     // Teal 500 for primary actions
+                        'secondary-teal': '#0D9488',   // Teal 600 for hover/darker accents
+                        'light-bg': '#F8FAFC',        /* Slate 50 - Very light background */
+                        'light-card': '#F1F5F9',      /* Slate 100 - Light card */
+                        'dark-bg': '#0F172A',         // Slate-900 for dark background
+                        'dark-card': '#1E293B',       // Slate-800 for dark cards
+                    },
+                    fontFamily: {sans: ['Inter', 'sans-serif'],},
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* BASE & UTILITY STYLES */
+        body {
+            background-color: #F8FAFC; /* Slate-50 background for the page */
+            color: #1E293B;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .gradient-text {
+            /* Teal to Cyan gradient for a modern, attractive look */
+            background-image: linear-gradient(45deg, #14B8A6, #22D3EE);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    </style>
+
+
+    
+        
+            <link rel="stylesheet" href="/assets/css/battery-alarm.css">
+        
+    
+
+</head>
+<body>
+
+<!-- Header & Navigation -->
+<header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+        <a href="/" class="text-2xl font-extrabold gradient-text">synkn.app</a>
+        <nav class="hidden md:flex space-x-8 text-gray-600 font-medium">
+            <a href="/#projects" class="hover:text-primary-teal transition duration-150">Projects</a>
+            <a href="/#contact" class="hover:text-primary-teal transition duration-150">Contact</a>
+        </nav>
+        <a href="/#projects" class="md:inline-flex hidden px-4 py-2 bg-primary-teal text-white text-sm font-semibold rounded-lg shadow-md hover:bg-secondary-teal transition duration-150">See Our Work</a>
+    </div>
+</header>
+
+<!-- Main Content -->
+
+<!-- Adjusted padding back to pt-32, combined with the higher Z-index on the header, this should fix the overlap. Removed mt-10 from inner div. -->
+<section class="bg-dark-bg text-white pt-32 pb-16 sm:pb-24 overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+
+        <!-- Text Content -->
+        <div class="md:w-1/2 mb-12 md:mb-0 z-10">
+            <div class="flex items-center space-x-4 mb-6">
+                <!-- Icon Placeholder -->
+                <img src="https://placehold.co/80x80/0D9488/FFFFFF?text=🔋" alt="Battery Alarm Icon"
+                     class="rounded-2xl shadow-lg">
+                <span class="px-3 py-1 bg-teal-900 text-teal-300 text-xs font-bold uppercase tracking-wider rounded-full">Essential Utility</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+                ChargeAlert: <span class="gradient-text">Master Your Battery Health</span>
+            </h1>
+            <p class="text-lg text-gray-400 mb-8 max-w-lg">
+                The smart app that notifies you when your battery hits custom high or low thresholds, protecting against
+                damage and significantly extending its lifespan.
+            </p>
+            <div class="flex space-x-4">
+                <a href="#"
+                   class="flex items-center px-6 py-3 bg-primary-teal text-white font-bold rounded-xl shadow-lg hover:bg-secondary-teal transition">
+                    <!-- Placeholder for Download Button -->
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4c-3.72 0-6.81 2.53-7.7 6.04C2.88 10.42 2 11.77 2 13c0 2.21 1.79 4 4 4h13c2.21 0 4-1.79 4-4 0-2.05-1.53-3.76-3.65-3.96zM15 15h-2v2h-2v-2H9l3-3 3 3z"/>
+                    </svg>
+                    Download Now
+                </a>
+                <a href="#"
+                   class="flex items-center px-6 py-3 bg-dark-card border border-gray-700 text-gray-300 font-bold rounded-xl hover:bg-gray-700 transition">
+                    Learn More
+                </a>
+            </div>
+        </div>
+
+        <!-- Image/Mockup Placeholder -->
+        <div class="md:w-1/2 relative flex justify-center mt-10 md:mt-0">
+            <!-- Abstract Glow -->
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-primary-teal opacity-20 blur-[80px] rounded-full"></div>
+            <!-- Dummy Phone Mockup (Battery focused screen) -->
+            <img src="https://placehold.co/320x640/1E293B/14B8A6?text=ChargeAlert%0A70%25+Limit"
+                 alt="App Screenshot showing battery limits"
+                 class="relative z-10 rounded-[3rem] border-8 border-gray-800 shadow-2xl transform rotate-5 hover:rotate-0 transition duration-500">
+        </div>
+    </div>
+</section>
+
+<!-- Key Benefits & Features -->
+<section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">The Power of Prevendftion</h2>
+
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+            <!-- Feature 1: Overcharge Prevention -->
+            <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 h-full">
+                <div class="w-12 h-12 feature-icon rounded-lg flex items-center justify-center mb-4 text-2xl mx-auto">
+                    🛑
+                </div>
+                <h3 class="text-xl font-bold mb-2">Stop Overcharging</h3>
+                <p class="text-gray-600">Set a maximum charge level (e.g., 80%) and receive a loud alert. Prevents heat
+                    damage and chemical degradation.</p>
+            </div>
+            <!-- Feature 2: Battery Life Extension -->
+            <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 h-full">
+                <div class="w-12 h-12 feature-icon rounded-lg flex items-center justify-center mb-4 text-2xl mx-auto">
+                    📈
+                </div>
+                <h3 class="text-xl font-bold mb-2">Extend Longevity</h3>
+                <p class="text-gray-600">By maintaining charge within the optimal 20-80% range, you can double your
+                    battery's effective cycle count.</p>
+            </div>
+            <!-- Feature 3: Low Battery Alert -->
+            <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 h-full">
+                <div class="w-12 h-12 feature-icon rounded-lg flex items-center justify-center mb-4 text-2xl mx-auto">
+                    🔔
+                </div>
+                <h3 class="text-xl font-bold mb-2">Low Limit Notification</h3>
+                <p class="text-gray-600">Set a minimum level (e.g., 20%) to prevent critical shutdown and safeguard your
+                    battery from deep discharge stress.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer Section for Static Pages and Copyright -->
+<footer class="bg-gray-800 text-gray-400 py-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+            <!-- Logo/Branding -->
+            <div>
+                <a href="/" class="text-2xl font-extrabold text-white">synkn.app</a>
+                <p class="text-sm mt-2">Digital tools built with passion.</p>
+            </div>
+
+            <!-- Product Links -->
+            <div>
+                <h4 class="text-white font-semibold mb-3">Products</h4>
+                <ul class="space-y-2 text-sm">
+                    <!-- Footer links now use hover:text-primary-teal -->
+                    <li><a href="/battery-alarm" class="hover:text-primary-teal transition duration-150">Battery Alarm</a></li>
+                    <li><a href="/glowsynk" class="hover:text-primary-teal transition duration-150">GlowSynk</a></li>
+                    <li><a href="/website" class="hover:text-primary-teal transition duration-150">Website1</a></li>
+                </ul>
+            </div>
+
+            <!-- Static Pages / Legal -->
+            <div>
+                <h4 class="text-white font-semibold mb-3">Legal & Info</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/battery-privacy-policy" class="hover:text-primary-teal transition duration-150">Battery Privacy Policy</a></li>
+                    <li><a href="/contact-us" class="hover:text-primary-teal transition duration-150">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Get Started -->
+            <div>
+                <h4 class="text-white font-semibold mb-3">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/#home" class="hover:text-primary-teal transition duration-150">Home</a></li>
+                    <li><a href="/#projects" class="hover:text-primary-teal transition duration-150">Projects</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Copyright and Social Icons (Placeholder) -->
+        <div class="pt-8 border-t border-gray-700 text-center text-sm">
+            &copy; <span id="current-year"></span> Synkn.app. All rights reserved.
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            const yearElement = document.getElementById('current-year');
+            if (yearElement) {
+                yearElement.textContent = new Date().getFullYear();
+            }
+        })();
+    </script>
+</footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synkn</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- ==================================== -->
+    <!-- TAILWIND CONFIGURATION (Reusable)    -->
+    <!-- ==================================== -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-teal': '#14B8A6',     // Teal 500 for primary actions
+                        'secondary-teal': '#0D9488',   // Teal 600 for hover/darker accents
+                        'light-bg': '#F8FAFC',        /* Slate 50 - Very light background */
+                        'light-card': '#F1F5F9',      /* Slate 100 - Light card */
+                        'dark-bg': '#0F172A',         // Slate-900 for dark background
+                        'dark-card': '#1E293B',       // Slate-800 for dark cards
+                    },
+                    fontFamily: {sans: ['Inter', 'sans-serif'],},
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* BASE & UTILITY STYLES */
+        body {
+            background-color: #F8FAFC; /* Slate-50 background for the page */
+            color: #1E293B;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .gradient-text {
+            /* Teal to Cyan gradient for a modern, attractive look */
+            background-image: linear-gradient(45deg, #14B8A6, #22D3EE);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    </style>
+
+
+    
+        
+            <link rel="stylesheet" href="/assets/css/battery-privacy-policy.css">
+        
+    
+
+</head>
+<body>
+
+<!-- Header & Navigation -->
+<header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+        <a href="/" class="text-2xl font-extrabold gradient-text">synkn.app</a>
+        <nav class="hidden md:flex space-x-8 text-gray-600 font-medium">
+            <a href="/#projects" class="hover:text-primary-teal transition duration-150">Projects</a>
+            <a href="/#contact" class="hover:text-primary-teal transition duration-150">Contact</a>
+        </nav>
+        <a href="/#projects" class="md:inline-flex hidden px-4 py-2 bg-primary-teal text-white text-sm font-semibold rounded-lg shadow-md hover:bg-secondary-teal transition duration-150">See Our Work</a>
+    </div>
+</header>
+
+<!-- Main Content -->
+
+
+<!-- Main Content -->
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="bg-white rounded-2xl shadow-xl border border-gray-100 p-8 sm:p-12">
+        <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">Privacy Policy</h1>
+        <p class="text-gray-500 text-sm mb-12">Last Updated: November 24, 2025</p>
+
+        <div class="prose max-w-none">
+            <p>Welcome to Synkn.app. We respect your privacy and are committed to protecting your personal data. This
+                privacy policy will inform you as to how we look after your personal data when you visit our website or
+                use our applications.</p>
+
+            <h2>1. Information We Collect</h2>
+            <p>We may collect, use, store and transfer different kinds of personal data about you which we have grouped
+                together follows:</p>
+            <ul>
+                <li><strong>Identity Data:</strong> includes first name, last name, username or similar identifier.</li>
+                <li><strong>Contact Data:</strong> includes email address and telephone number.</li>
+                <li><strong>Technical Data:</strong> includes internet protocol (IP) address, your login data, browser
+                    type and version, time zone setting and location.
+                </li>
+            </ul>
+
+            <h2>2. How We Use Your Data</h2>
+            <p>We will only use your personal data when the law allows us to. Most commonly, we will use your personal
+                data in the following circumstances:</p>
+            <ul>
+                <li>To provide and maintain our Service.</li>
+                <li>To notify you about changes to our Service.</li>
+                <li>To provide customer support.</li>
+                <li>To gather analysis or valuable information so that we can improve our Service.</li>
+            </ul>
+
+            <h2>3. Data Security</h2>
+            <p>We have put in place appropriate security measures to prevent your personal data from being accidentally
+                lost, used or accessed in an unauthorized way, altered or disclosed. In addition, we limit access to
+                your personal data to those employees, agents, contractors and other third parties who have a business
+                need to know.</p>
+
+            <h2>4. Contact Us</h2>
+            <p>If you have any questions about this privacy policy or our privacy practices, please contact us via the
+                form on our <a href="/contact-us" class="text-primary-teal hover:underline">Contact page</a>.</p>
+        </div>
+    </div>
+</main>
+
+
+<!-- Footer Section for Static Pages and Copyright -->
+<footer class="bg-gray-800 text-gray-400 py-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+            <!-- Logo/Branding -->
+            <div>
+                <a href="/" class="text-2xl font-extrabold text-white">synkn.app</a>
+                <p class="text-sm mt-2">Digital tools built with passion.</p>
+            </div>
+
+            <!-- Product Links -->
+            <div>
+                <h4 class="text-white font-semibold mb-3">Products</h4>
+                <ul class="space-y-2 text-sm">
+                    <!-- Footer links now use hover:text-primary-teal -->
+                    <li><a href="/battery-alarm" class="hover:text-primary-teal transition duration-150">Battery Alarm</a></li>
+                    <li><a href="/glowsynk" class="hover:text-primary-teal transition duration-150">GlowSynk</a></li>
+                    <li><a href="/website" class="hover:text-primary-teal transition duration-150">Website1</a></li>
+                </ul>
+            </div>
+
+            <!-- Static Pages / Legal -->
+            <div>
+                <h4 class="text-white font-semibold mb-3">Legal & Info</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/battery-privacy-policy" class="hover:text-primary-teal transition duration-150">Battery Privacy Policy</a></li>
+                    <li><a href="/contact-us" class="hover:text-primary-teal transition duration-150">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Get Started -->
+            <div>
+                <h4 class="text-white font-semibold mb-3">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/#home" class="hover:text-primary-teal transition duration-150">Home</a></li>
+                    <li><a href="/#projects" class="hover:text-primary-teal transition duration-150">Projects</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Copyright and Social Icons (Placeholder) -->
+        <div class="pt-8 border-t border-gray-700 text-center text-sm">
+            &copy; <span id="current-year"></span> Synkn.app. All rights reserved.
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            const yearElement = document.getElementById('current-year');
+            if (yearElement) {
+                yearElement.textContent = new Date().getFullYear();
+            }
+        })();
+    </script>
+</footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synkn</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- ==================================== -->
+    <!-- TAILWIND CONFIGURATION (Reusable)    -->
+    <!-- ==================================== -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-teal': '#14B8A6',     // Teal 500 for primary actions
+                        'secondary-teal': '#0D9488',   // Teal 600 for hover/darker accents
+                        'light-bg': '#F8FAFC',        /* Slate 50 - Very light background */
+                        'light-card': '#F1F5F9',      /* Slate 100 - Light card */
+                        'dark-bg': '#0F172A',         // Slate-900 for dark background
+                        'dark-card': '#1E293B',       // Slate-800 for dark cards
+                    },
+                    fontFamily: {sans: ['Inter', 'sans-serif'],},
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* BASE & UTILITY STYLES */
+        body {
+            background-color: #F8FAFC; /* Slate-50 background for the page */
+            color: #1E293B;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .gradient-text {
+            /* Teal to Cyan gradient for a modern, attractive look */
+            background-image: linear-gradient(45deg, #14B8A6, #22D3EE);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    </style>
+
+
+    
+
+</head>
+<body>
+
+<!-- Header & Navigation -->
+<header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+        <a href="/" class="text-2xl font-extrabold gradient-text">synkn.app</a>
+        <nav class="hidden md:flex space-x-8 text-gray-600 font-medium">
+            <a href="/#projects" class="hover:text-primary-teal transition duration-150">Projects</a>
+            <a href="/#contact" class="hover:text-primary-teal transition duration-150">Contact</a>
+        </nav>
+        <a href="/#projects" class="md:inline-flex hidden px-4 py-2 bg-primary-teal text-white text-sm font-semibold rounded-lg shadow-md hover:bg-secondary-teal transition duration-150">See Our Work</a>
+    </div>
+</header>
+
+<!-- Main Content -->
+
+<!-- Hero Section -->
+<section id="home" class="bg-dark-bg text-white pt-32 pb-20 sm:pb-32">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight mb-4">
+            Creating the Future of <span class="gradient-text">Digital Tools</span>
+        </h1>
+        <p class="text-xl sm:text-2xl text-gray-400 mb-8 max-w-3xl mx-auto">
+            Synkn.app is the hub for innovative websites and powerful applications designed to simplify your digital
+            life.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <!-- Buttons now use bg-primary-teal and hover:bg-secondary-teal -->
+            <a href="/#projects"
+               class="px-8 py-3 bg-primary-teal text-white text-lg font-semibold rounded-xl shadow-lg hover:bg-secondary-teal transition duration-300 transform hover:scale-105">
+                Explore Our Projects
+            </a>
+            <a href="/#contact"
+               class="px-8 py-3 bg-dark-card border border-gray-700 text-gray-300 text-lg font-semibold rounded-xl shadow-lg hover:bg-gray-700 transition duration-300 transform hover:scale-105">
+                Get in Touch
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Showcase Section -->
+<section id="projects" class="py-16 sm:py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-4 text-gray-800">
+            Our Latest Creations
+        </h2>
+        <p class="text-xl text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+            Check out the applications and websites we've built, all focused on solving real-world problems.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-8">
+
+            <!-- Project 1: ChargeAlert App (Battery Alarm) -->
+            <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 transition duration-300 card-hover">
+                <div class="text-4xl mb-4 text-primary-teal">
+                    🔋
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-gray-800">ChargeAlert (Battery Health)</h3>
+                <span class="inline-block bg-teal-100 text-primary-teal text-xs font-semibold px-3 py-1 rounded-full mb-3">Mobile Utility</span>
+                <p class="text-gray-600 mb-4">
+                    An essential app that alarms you when your device battery reaches custom upper or lower limits,
+                    maximizing battery longevity.
+                </p>
+                <a href="/battery-alarm"
+                   class="text-primary-teal font-semibold hover:text-secondary-teal transition duration-150 flex items-center">
+                    View Details
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Project 2: GlowSynk App (Salon Appointment) -->
+            <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 transition duration-300 card-hover">
+                <div class="text-4xl mb-4 text-indigo-500">
+                    📅
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-gray-800">GlowSynk (Salon Booking)</h3>
+                <span class="inline-block bg-indigo-100 text-indigo-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">SaaS Platform</span>
+                <p class="text-gray-600 mb-4">
+                    A dual-user mobile app for salons and customers, featuring specialist management, payment
+                    integration, and multi-currency support.
+                </p>
+                <a href="/glowsynk"
+                   class="text-primary-teal font-semibold hover:text-secondary-teal transition duration-150 flex items-center">
+                    View Platform
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Project 3: Interactive Website (Website 1) -->
+            <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 transition duration-300 card-hover">
+                <div class="text-4xl mb-4 text-cyan-500">
+                    🌐
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-gray-800">Interactive Website (Website 1)</h3>
+                <span class="inline-block bg-cyan-100 text-cyan-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">Service Platform</span>
+                <p class="text-gray-600 mb-4">
+                    Our flagship web platform offering real-time data visualization and customized reporting tools for
+                    analysts and teams.
+                </p>
+                <a href="/website"
+                   class="text-primary-teal font-semibold hover:text-secondary-teal transition duration-150 flex items-center">
+                    Visit Website
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Contact Us Section -->
+<section id="contact" class="py-16 sm:py-24 bg-dark-bg text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-4">
+            Ready to <span class="gradient-text">Synk Up?</span>
+        </h2>
+        <p class="text-xl text-center text-gray-400 mb-12 max-w-xl mx-auto">
+            If you're a business looking to partner, collaborate on a project, or just want to learn how our digital
+            tools can connect you with others, drop us a line.
+        </p>
+
+        <form class="bg-dark-card p-8 rounded-xl shadow-2xl space-y-6">
+            <div>
+                <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Your Name</label>
+                <!-- Input focus now uses focus:ring-primary-teal -->
+                <input type="text" id="name" name="name" placeholder="John Doe"
+                       class="w-full px-4 py-2 bg-slate-700 border border-slate-600 rounded-lg focus:ring-primary-teal focus:border-primary-teal text-white placeholder-slate-400"
+                       required>
+            </div>
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com"
+                       class="w-full px-4 py-2 bg-slate-700 border border-slate-600 rounded-lg focus:ring-primary-teal focus:border-primary-teal text-white placeholder-slate-400"
+                       required>
+            </div>
+            <div>
+                <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="How can we help you?"
+                          class="w-full px-4 py-2 bg-slate-700 border border-slate-600 rounded-lg focus:ring-primary-teal focus:border-primary-teal text-white placeholder-slate-400"
+                          required></textarea>
+            </div>
+
+            <!-- Submit button uses bg-primary-teal and hover:bg-secondary-teal -->
+            <button type="submit"
+                    class="w-full px-6 py-3 bg-primary-teal text-white text-lg font-semibold rounded-lg shadow-md hover:bg-secondary-teal transition duration-150 transform hover:scale-[1.01]">
+                Send Message
+            </button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer Section for Static Pages and Copyright -->
+<footer class="bg-gray-800 text-gray-400 py-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+            <!-- Logo/Branding -->
+            <div>
+                <a href="/" class="text-2xl font-extrabold text-white">synkn.app</a>
+                <p class="text-sm mt-2">Digital tools built with passion.</p>
+            </div>
+
+            <!-- Product Links -->
+            <div>
+                <h4 class="text-white font-semibold mb-3">Products</h4>
+                <ul class="space-y-2 text-sm">
+                    <!-- Footer links now use hover:text-primary-teal -->
+                    <li><a href="/battery-alarm" class="hover:text-primary-teal transition duration-150">Battery Alarm</a></li>
+                    <li><a href="/glowsynk" class="hover:text-primary-teal transition duration-150">GlowSynk</a></li>
+                    <li><a href="/website" class="hover:text-primary-teal transition duration-150">Website1</a></li>
+                </ul>
+            </div>
+
+            <!-- Static Pages / Legal -->
+            <div>
+                <h4 class="text-white font-semibold mb-3">Legal & Info</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/battery-privacy-policy" class="hover:text-primary-teal transition duration-150">Battery Privacy Policy</a></li>
+                    <li><a href="/contact-us" class="hover:text-primary-teal transition duration-150">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Get Started -->
+            <div>
+                <h4 class="text-white font-semibold mb-3">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/#home" class="hover:text-primary-teal transition duration-150">Home</a></li>
+                    <li><a href="/#projects" class="hover:text-primary-teal transition duration-150">Projects</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Copyright and Social Icons (Placeholder) -->
+        <div class="pt-8 border-t border-gray-700 text-center text-sm">
+            &copy; <span id="current-year"></span> Synkn.app. All rights reserved.
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            const yearElement = document.getElementById('current-year');
+            if (yearElement) {
+                yearElement.textContent = new Date().getFullYear();
+            }
+        })();
+    </script>
+</footer>
+
+
+
+</body>
+</html>
