@@ -2,11 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Synkn</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5">
+
+    <!-- Title For the page -->
+    <title>Battery Alarm</title>
+
+    <!-- Meta Keyword For Page -->
+    <meta name="keywords" content="battery alarm, battery saver, battery check, battery optimizer">
+    <meta name="description" content="The smart app that notifies you when your battery hits custom high or low thresholds, protecting against damage and significantly extending its lifespan.">
+    <meta name="author" content="Synkn">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png ">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+
+    <!-- Manifest Json -->
+    <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
+
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
     <!-- ==================================== -->
     <!-- TAILWIND CONFIGURATION (Reusable)    -->
@@ -51,7 +70,7 @@
 
     
         
-            <link rel="stylesheet" href="/assets/css/battery-alarm.css">
+            <link rel="preload" href="/assets/css/battery-alarm.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         
     
 
@@ -61,7 +80,7 @@
 <!-- Header & Navigation -->
 <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        <a href="/" class="text-2xl font-extrabold gradient-text">synkn.app</a>
+        <a href="/" class="text-2xl font-extrabold gradient-text">Synkn</a>
         <nav class="hidden md:flex space-x-8 text-gray-600 font-medium">
             <a href="/#projects" class="hover:text-primary-teal transition duration-150">Projects</a>
             <a href="/#contact" class="hover:text-primary-teal transition duration-150">Contact</a>
@@ -85,7 +104,7 @@
                 <span class="px-3 py-1 bg-teal-900 text-teal-300 text-xs font-bold uppercase tracking-wider rounded-full">Essential Utility</span>
             </div>
             <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
-                ChargeAlert: <span class="gradient-text">Master Your Battery Health</span>
+                Battery Alarm: <span class="gradient-text">Master Your Battery Health</span>
             </h1>
             <p class="text-lg text-gray-400 mb-8 max-w-lg">
                 The smart app that notifies you when your battery hits custom high or low thresholds, protecting against
@@ -113,7 +132,7 @@
             <!-- Abstract Glow -->
             <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-primary-teal opacity-20 blur-[80px] rounded-full"></div>
             <!-- Dummy Phone Mockup (Battery focused screen) -->
-            <img src="https://placehold.co/320x640/1E293B/14B8A6?text=ChargeAlert%0A70%25+Limit"
+            <img src="https://placehold.co/320x640/1E293B/14B8A6?text=Batter Alarm%0A70%25+Limit"
                  alt="App Screenshot showing battery limits"
                  class="relative z-10 rounded-[3rem] border-8 border-gray-800 shadow-2xl transform rotate-5 hover:rotate-0 transition duration-500">
         </div>
@@ -164,7 +183,7 @@
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
             <!-- Logo/Branding -->
             <div>
-                <a href="/" class="text-2xl font-extrabold text-white">synkn.app</a>
+                <a href="/" class="text-2xl font-extrabold text-white">Synkn</a>
                 <p class="text-sm mt-2">Digital tools built with passion.</p>
             </div>
 
@@ -201,7 +220,7 @@
 
         <!-- Copyright and Social Icons (Placeholder) -->
         <div class="pt-8 border-t border-gray-700 text-center text-sm">
-            &copy; <span id="current-year"></span> Synkn.app. All rights reserved.
+            &copy; <span id="current-year"></span> synkn.app. All rights reserved.
         </div>
     </div>
 
@@ -214,6 +233,7 @@
         })();
     </script>
 </footer>
+
 
 
 

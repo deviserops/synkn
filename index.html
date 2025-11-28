@@ -2,11 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5">
+
+    <!-- Title For the page -->
     <title>Synkn</title>
+
+    <!-- Meta Keyword For Page -->
+    <meta name="keywords" content="Synkn">
+    <meta name="description" content="Synkn">
+    <meta name="author" content="Synkn">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png ">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+
+    <!-- Manifest Json -->
+    <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
+
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
     <!-- ==================================== -->
     <!-- TAILWIND CONFIGURATION (Reusable)    -->
@@ -57,7 +76,7 @@
 <!-- Header & Navigation -->
 <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        <a href="/" class="text-2xl font-extrabold gradient-text">synkn.app</a>
+        <a href="/" class="text-2xl font-extrabold gradient-text">Synkn</a>
         <nav class="hidden md:flex space-x-8 text-gray-600 font-medium">
             <a href="/#projects" class="hover:text-primary-teal transition duration-150">Projects</a>
             <a href="/#contact" class="hover:text-primary-teal transition duration-150">Contact</a>
@@ -75,7 +94,7 @@
             Creating the Future of <span class="gradient-text">Digital Tools</span>
         </h1>
         <p class="text-xl sm:text-2xl text-gray-400 mb-8 max-w-3xl mx-auto">
-            Synkn.app is the hub for innovative websites and powerful applications designed to simplify your digital
+            Synkn is the hub for innovative websites and powerful applications designed to simplify your digital
             life.
         </p>
         <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
@@ -104,12 +123,12 @@
 
         <div class="grid md:grid-cols-3 gap-8">
 
-            <!-- Project 1: ChargeAlert App (Battery Alarm) -->
+            <!-- Project 1: Battery Alarm App (Battery Alarm) -->
             <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 transition duration-300 card-hover">
                 <div class="text-4xl mb-4 text-primary-teal">
                     🔋
                 </div>
-                <h3 class="text-xl font-bold mb-2 text-gray-800">ChargeAlert (Battery Health)</h3>
+                <h3 class="text-xl font-bold mb-2 text-gray-800">Battery Alarm (Battery Health)</h3>
                 <span class="inline-block bg-teal-100 text-primary-teal text-xs font-semibold px-3 py-1 rounded-full mb-3">Mobile Utility</span>
                 <p class="text-gray-600 mb-4">
                     An essential app that alarms you when your device battery reaches custom upper or lower limits,
@@ -221,7 +240,7 @@
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
             <!-- Logo/Branding -->
             <div>
-                <a href="/" class="text-2xl font-extrabold text-white">synkn.app</a>
+                <a href="/" class="text-2xl font-extrabold text-white">Synkn</a>
                 <p class="text-sm mt-2">Digital tools built with passion.</p>
             </div>
 
@@ -258,7 +277,7 @@
 
         <!-- Copyright and Social Icons (Placeholder) -->
         <div class="pt-8 border-t border-gray-700 text-center text-sm">
-            &copy; <span id="current-year"></span> Synkn.app. All rights reserved.
+            &copy; <span id="current-year"></span> synkn.app. All rights reserved.
         </div>
     </div>
 
@@ -271,6 +290,7 @@
         })();
     </script>
 </footer>
+
 
 
 
