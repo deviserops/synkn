@@ -1,7 +1,7 @@
 {
-  "name": "Synkn Product Showcase",
+  "name": "Synkn",
   "short_name": "Synkn",
-  "description": "The official product website for synkn.",
+  "description": "Bring Business Together: synkn.",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
