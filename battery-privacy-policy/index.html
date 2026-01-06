@@ -91,7 +91,10 @@
 <!-- Header & Navigation -->
 <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        <img src="/assets/images/logo.png" class="h-5 " alt="Synkn"/>
+        <a href="/" class="relative inline-block">
+            <img src="/assets/images/logo.png" class="h-5" alt="Synkn"/>
+            <span class="absolute -top-2.5 -right-4 font-bold text-gray-500">™</span>
+        </a>
         <nav class="hidden md:flex space-x-8 text-gray-600 font-medium">
             <a href="/#products" class="hover:text-primary-teal transition duration-150">Products</a>
             <a href="/#contact" class="hover:text-primary-teal transition duration-150">Contact</a>
@@ -424,8 +427,8 @@
             <h2 class="text-3xl font-bold text-gray-800">Contact Us</h2>
             <p class="text-gray-700">If you have any questions about this Privacy Policy, You can contact us:</p>
             <ul class="list-disc list-inside space-y-1 pl-4 text-gray-700">
-                <li>By visiting this page on our website: <a href="https://synkn.app/contact-us/"
-                                                             rel="external nofollow noopener" target="_blank"
+                <li>By visiting this page on our website: <a href="/contact-us/" rel="external nofollow noopener"
+                                                             target="_blank"
                                                              class="text-teal-600 hover:text-teal-800 underline transition duration-150 font-semibold">https://synkn.app/contact-us/</a>
                 </li>
             </ul>
@@ -440,8 +443,11 @@
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
             <!-- Logo/Branding -->
             <div>
-                <a href="/" class="text-2xl font-extrabold text-white">Synkn</a>
-                <p class="text-sm mt-2">Digital tools built with passion.</p>
+                <a href="/" class="relative inline-block text-2xl font-extrabold text-white">
+                    Synkn
+                    <span class="absolute -top-1 -right-4 font-medium uppercase">™</span>
+                </a>
+                <p class="text-sm mt-2 text-gray-300">Digital tools built with passion.</p>
             </div>
 
             <!-- Product Links -->
