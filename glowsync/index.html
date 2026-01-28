@@ -26,50 +26,11 @@
     <!-- Manifest Json -->
     <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
 
-    <!-- Load Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Page-specific Tailwind CSS -->
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-    <!-- ==================================== -->
-    <!-- TAILWIND CONFIGURATION (Reusable)    -->
-    <!-- ==================================== -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'primary-teal': '#14B8A6',     // Teal 500 for primary actions
-                        'secondary-teal': '#0D9488',   // Teal 600 for hover/darker accents
-                        'light-bg': '#F8FAFC',        /* Slate 50 - Very light background */
-                        'light-card': '#F1F5F9',      /* Slate 100 - Light card */
-                        'dark-bg': '#0F172A',         // Slate-900 for dark background
-                        'dark-card': '#1E293B',       // Slate-800 for dark cards
-                    },
-                    fontFamily: {sans: ['Inter', 'sans-serif'],},
-                }
-            }
-        }
-    </script>
-
-    <style>
-        /* BASE & UTILITY STYLES */
-        body {
-            background-color: #F8FAFC; /* Slate-50 background for the page */
-            color: #1E293B;
-            font-family: 'Inter', sans-serif;
-            scroll-behavior: smooth;
-        }
-
-        .gradient-text {
-            /* Teal to Cyan gradient for a modern, attractive look */
-            background-image: linear-gradient(45deg, #14B8A6, #22D3EE);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-fill-color: transparent;
-        }
-    </style>
-
 
     
         
