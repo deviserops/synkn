@@ -27,8 +27,11 @@
     <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
 
     <!-- Load Page-specific Tailwind CSS -->
-    <link rel="stylesheet" href="/assets/css/global.css">
-    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="preload" href="/assets/css/global.css?v=feb-02-ruary-synkn-ver-02" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/assets/css/global.css?v=feb-02-ruary-synkn-ver-02"></noscript>
+
+    <link rel="preload" href="/assets/css/base.css?v=feb-02-ruary-synkn-ver-02" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/assets/css/base.css?v=feb-02-ruary-synkn-ver-02"></noscript>
 
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
@@ -273,7 +276,6 @@
     </script>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 
     
         <script type="text/javascript" src="/assets/js/contact_us.js" defer></script>
