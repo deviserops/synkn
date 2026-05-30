@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5">
+
+    <!-- For Security Contact Us Page Submit -->
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- Title For the page -->
+    <title>SyncZone | Synkn</title>
+
+    <!-- Meta Keyword For Page -->
+    <meta name="keywords" content="SyncZone, meeting, Meeting App, Client Meeting Schedule Booking,">
+    <meta name="description" content="Stop doing mental math. Visually overlap timezones, manage global clients, take markdown-ready notes, and schedule meetings perfectly—100% securely on your browser.">
+    <meta name="author" content="Synkn">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png ">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+
+    <!-- Manifest Json -->
+    <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
+
+    <!-- Load Page-specific Tailwind CSS -->
+    <link rel="preload" href="/assets/css/global.css?v=may-05--synkn-ver-05" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/assets/css/global.css?v=may-05--synkn-ver-05"></noscript>
+
+    <link rel="preload" href="/assets/css/base.css?v=may-05--synkn-ver-05" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/assets/css/base.css?v=may-05--synkn-ver-05"></noscript>
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    
+        
+            <link rel="preload" href="/assets/css/synczone.css?v=may-05--synkn-ver-05" as="style" onload="this.onload=null;this.rel='stylesheet'">
+            <noscript><link rel="stylesheet" href="/assets/css/synczone.css?v=may-05--synkn-ver-05"></noscript>
+        
+    
+
+</head>
+<body>
+
+<!-- Full Page Loader -->
+<div id="loader" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-white/80 backdrop-blur-sm">
+  <div class="flex flex-col items-center">
+    <div class="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+    <p class="mt-4 text-gray-700 font-medium">Loading...</p>
+  </div>
+</div>
+
+<!-- Header & Navigation -->
+<header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+        <a href="/" class="relative inline-block">
+            <img src="/assets/images/logo.png" class="h-5" alt="Synkn"/>
+            <span class="absolute -top-2.5 -right-4 font-bold text-gray-500">™</span>
+        </a>
+        <nav class="hidden md:flex space-x-8 text-gray-600 font-medium">
+            <a href="/#products" class="hover:text-primary-teal transition duration-150">Products</a>
+            <a href="/#contact" class="hover:text-primary-teal transition duration-150">Contact</a>
+        </nav>
+        <a href="/#products" class="md:inline-flex hidden px-4 py-2 bg-primary-teal text-white text-sm font-semibold rounded-lg shadow-md hover:bg-secondary-teal transition duration-150">See Our Work</a>
+    </div>
+</header>
+
+<!-- Main Content -->
+
+
+<!-- App Hero Section: GlobalSync -->
+<section class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+    <!-- Background decorative elements -->
+    <div class="absolute top-1/4 left-0 w-72 h-72 bg-indigo-600/20 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-pulse"></div>
+    <div class="absolute top-1/3 right-0 w-72 h-72 bg-emerald-500/20 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-pulse delay-1000"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+
+            <!-- Hero Content -->
+            <div class="text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-100 text-indigo-600 font-medium text-sm mb-6 border border-indigo-200">
+                    <span class="w-2 h-2 rounded-full bg-indigo-600 animate-ping"></span>
+                    For Project Managers & BDMs
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-slate-900 leading-tight">
+                    SyncZone <br/>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-indigo-400">Meeting Coordination</span>
+                </h1>
+                <p class="text-lg text-slate-600 mb-8 max-w-2xl mx-auto lg:mx-0">
+                    Stop doing mental math. Visually overlap timezones, manage global clients, take markdown-ready
+                    notes, and schedule meetings perfectly—100% securely on your browser.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="https://sync-zone.synkn.app/" target="_blank"
+                       class="px-8 py-3.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-base transition-all shadow-lg shadow-indigo-600/30 flex items-center justify-center gap-2">
+                        Open Workspace <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                    <!--                    <button class="px-8 py-3.5 rounded-lg bg-slate-200 hover:bg-slate-300 text-slate-900 font-semibold text-base transition-all border border-transparent flex items-center justify-center gap-2">-->
+                    <!--                        <i data-lucide="play-circle" class="w-4 h-4"></i> Watch Demo-->
+                    <!--                    </button>-->
+                </div>
+            </div>
+
+            <!-- Abstract App UI Mockup (CSS Based) -->
+            <div class="relative lg:ml-10 animate-float hidden md:block">
+                <!-- Main Dashboard Card -->
+                <div class="bg-slate-950 border border-slate-700 rounded-2xl shadow-2xl p-4 overflow-hidden relative z-10 w-full max-w-lg mx-auto transform rotate-[-2deg]">
+                    <!-- Mock Header -->
+                    <div class="flex justify-between items-center mb-6">
+                        <div>
+                            <h3 class="text-white font-bold text-sm">Dynamic Time Sync</h3>
+                            <p class="text-slate-400 text-xs">Slide to test schedules</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <div class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs flex items-center gap-2">
+                                <div class="w-2 h-2 rounded-full bg-slate-400"></div>
+                                Live Sync
+                            </div>
+                            <div class="px-3 py-1 rounded-full bg-indigo-600 text-white text-xs">Planning Mode</div>
+                        </div>
+                    </div>
+
+                    <!-- Mock Time Widget -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 mb-4 flex justify-between items-center">
+                        <div>
+                            <p class="text-slate-400 text-xs uppercase font-semibold">Local Timezone</p>
+                            <p class="text-white font-bold text-lg">Asia/Calcutta</p>
+                            <p class="text-slate-400 text-xs">Saturday, May 30</p>
+                        </div>
+                        <div class="text-indigo-500 text-3xl font-bold font-mono">
+                            05:54 PM
+                        </div>
+                    </div>
+
+                    <!-- Mock Slider -->
+                    <div class="mb-6">
+                        <div class="flex justify-between text-xs text-slate-400 mb-2">
+                            <span>Midnight</span><span>6 AM</span><span>Noon</span><span>6 PM</span>
+                        </div>
+                        <div class="h-2 bg-slate-800 rounded-full relative">
+                            <div class="absolute left-1/2 w-4 h-4 bg-indigo-500 rounded-full -top-1 -ml-2 border-2 border-slate-950 shadow"></div>
+                            <div class="absolute left-[30%] right-[30%] h-full bg-indigo-600/30 rounded-full"></div>
+                        </div>
+                    </div>
+
+                    <!-- Mock Alert -->
+                    <div class="bg-rose-950/30 border border-rose-900/50 rounded-lg p-3 flex justify-between items-center">
+                        <div class="flex items-center gap-2 text-rose-400 text-xs">
+                            <div class="w-2 h-2 rounded-full bg-rose-500"></div>
+                            Non-standard timings for coordinates.
+                        </div>
+                        <div class="bg-indigo-500/20 text-indigo-400 px-2 py-1 rounded text-[10px] uppercase font-bold">
+                            Ideal Slot
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Decorative floating element -->
+                <div class="absolute -bottom-6 -right-6 bg-slate-900 border border-slate-700 rounded-xl shadow-xl p-4 z-20 transform rotate-[3deg] w-48 hidden lg:block">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-8 h-8 rounded-full bg-emerald-900/50 flex items-center justify-center text-emerald-400">
+                            <i data-lucide="user" class="w-4 h-4"></i>
+                        </div>
+                        <div>
+                            <p class="text-white text-sm font-bold">Priyanka</p>
+                            <p class="text-slate-400 text-xs">Australia/Perth</p>
+                        </div>
+                    </div>
+                    <div class="w-full h-1 bg-slate-800 rounded-full mt-3 overflow-hidden">
+                        <div class="w-3/4 h-full bg-emerald-500"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section (Statically Rendered for Eleventy) -->
+<section id="features" class="py-20 bg-white transition-colors duration-300 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold text-slate-900 mb-4">Everything you need to close global deals</h2>
+            <p class="text-slate-600">Purpose-built tools for professionals who handle multiple client timezones
+                simultaneously.</p>
+        </div>
+
+        <!-- Features Container -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Feature 1 -->
+            <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-indigo-500/50 transition-all group hover:shadow-xl hover:-translate-y-1">
+                <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5 bg-blue-100 text-blue-500 group-hover:scale-110 transition-transform">
+                    <i data-lucide="sliders" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-slate-900 mb-3">Dynamic Time Sync</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Visualize overlapping availability using an intuitive 24h timeline slider. Find the perfect meeting
+                    slot instantly.
+                </p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-indigo-500/50 transition-all group hover:shadow-xl hover:-translate-y-1">
+                <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5 bg-emerald-100 text-emerald-500 group-hover:scale-110 transition-transform">
+                    <i data-lucide="users" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-slate-900 mb-3">Client Directory</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Store clients with linked timezone hooks. Track emails, companies, and instantly map schedules to
+                    their local time.
+                </p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-indigo-500/50 transition-all group hover:shadow-xl hover:-translate-y-1">
+                <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5 bg-indigo-100 text-indigo-500 group-hover:scale-110 transition-transform">
+                    <i data-lucide="calendar-clock" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-slate-900 mb-3">Smart Scheduling</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Create meeting cards with pre-calculated cross-timezone targets. Add action items and track
+                    preparation checklists.
+                </p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-indigo-500/50 transition-all group hover:shadow-xl hover:-translate-y-1">
+                <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5 bg-purple-100 text-purple-500 group-hover:scale-110 transition-transform">
+                    <i data-lucide="share-2" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-slate-900 mb-3">Instant Sharing</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Generate perfectly formatted Markdown summaries for emails, or one-click copy meeting links to share
+                    with clients.
+                </p>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-indigo-500/50 transition-all group hover:shadow-xl hover:-translate-y-1">
+                <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5 bg-rose-100 text-rose-500 group-hover:scale-110 transition-transform">
+                    <i data-lucide="calendar-plus" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-slate-900 mb-3">iCal Integration</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Export scheduled meetings directly to your system calendar (.ics) with a single click—no manual
+                    entry required.
+                </p>
+            </div>
+
+            <!-- Feature 6 -->
+            <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-indigo-500/50 transition-all group hover:shadow-xl hover:-translate-y-1">
+                <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5 bg-amber-100 text-amber-500 group-hover:scale-110 transition-transform">
+                    <i data-lucide="sun-moon" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-slate-900 mb-3">Personalized UI</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Designed for long working hours. Toggle between clean light mode or immersive dark mode seamlessly.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Privacy & Data Section -->
+<section id="privacy" class="py-20 relative overflow-hidden bg-slate-50 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="bg-slate-900 rounded-3xl p-8 lg:p-12 border border-slate-800 shadow-2xl overflow-hidden relative">
+            <!-- Abstract bg pattern -->
+            <div class="absolute inset-0 opacity-10"
+                 style="background-image: radial-gradient(#6366F1 1px, transparent 1px); background-size: 24px 24px;"></div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center relative z-10">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center mb-6">
+                        <i data-lucide="shield-check" class="w-6 h-6"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold text-white mb-4">100% Client-Side Privacy</h2>
+                    <p class="text-slate-400 mb-6 text-lg">
+                        Your client data, notes, and schedules belong to you. GlobalSync runs entirely in your browser
+                        with zero server dependencies.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-slate-300">
+                            <i data-lucide="database" class="w-5 h-5 text-emerald-500"></i>
+                            Data stored safely in local browser storage
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-300">
+                            <i data-lucide="download-cloud" class="w-5 h-5 text-emerald-500"></i>
+                            Export/Import entire workspaces as JSON
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-300">
+                            <i data-lucide="wifi-off" class="w-5 h-5 text-emerald-500"></i>
+                            Works completely offline
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex justify-center lg:justify-end">
+                    <div class="bg-black/40 backdrop-blur border border-slate-700 rounded-xl p-6 w-full max-w-md">
+                        <div class="flex items-center justify-between mb-4 pb-4 border-b border-slate-700">
+                            <span class="text-white font-medium">Database Controls</span>
+                            <i data-lucide="settings-2" class="text-slate-400 w-5 h-5"></i>
+                        </div>
+                        <div class="space-y-3">
+                            <button class="w-full flex items-center justify-between px-4 py-3 bg-slate-800 hover:bg-slate-700 rounded-lg text-slate-200 text-sm transition-colors">
+                                <span class="flex items-center gap-2"><i data-lucide="download" class="w-4 h-4"></i> Export Backup (.json)</span>
+                            </button>
+                            <button class="w-full flex items-center justify-between px-4 py-3 bg-slate-800 hover:bg-slate-700 rounded-lg text-slate-200 text-sm transition-colors">
+                                <span class="flex items-center gap-2"><i data-lucide="upload" class="w-4 h-4"></i> Import Backup</span>
+                            </button>
+                            <button class="w-full flex items-center justify-between px-4 py-3 bg-rose-950/40 hover:bg-rose-900/60 text-rose-400 rounded-lg text-sm transition-colors border border-rose-900/50">
+                                <span class="flex items-center gap-2"><i data-lucide="trash-2" class="w-4 h-4"></i> Clear All Local Data</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section for Static Pages and Copyright -->
+<footer class="bg-gray-800 text-gray-400 py-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+            <!-- Logo/Branding -->
+            <div>
+                <a href="/" class="relative inline-block text-2xl font-extrabold text-white">
+                    Synkn
+                    <span class="absolute -top-1 -right-4 font-medium uppercase">™</span>
+                </a>
+                <p class="text-sm mt-2 text-gray-300">Digital tools built with passion.</p>
+            </div>
+
+            <!-- Product Links -->
+            <div>
+                <h4 class="text-white font-semibold mb-3">Products</h4>
+                <ul class="space-y-2 text-sm">
+                    <!-- Footer links now use hover:text-primary-teal -->
+                    <li><a href="/battery-alarm" class="hover:text-primary-teal transition duration-150">Battery Alarm</a></li>
+                    <!-- <li><a href="/glowsync" class="hover:text-primary-teal transition duration-150">GlowSync</a></li> -->
+                    <li><a href="/website" class="hover:text-primary-teal transition duration-150">Website1</a></li>
+                </ul>
+            </div>
+
+            <!-- Static Pages / Legal -->
+            <div>
+                <h4 class="text-white font-semibold mb-3">Legal & Info</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/battery-privacy-policy" class="hover:text-primary-teal transition duration-150">Battery Privacy Policy</a></li>
+                    <li><a href="/contact-us" class="hover:text-primary-teal transition duration-150">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Get Started -->
+            <div>
+                <h4 class="text-white font-semibold mb-3">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/#home" class="hover:text-primary-teal transition duration-150">Home</a></li>
+                    <li><a href="/#products" class="hover:text-primary-teal transition duration-150">Products</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Copyright and Social Icons (Placeholder) -->
+        <div class="pt-8 border-t border-gray-700 text-center text-sm">
+            &copy; <span id="current-year"></span> synkn.app. All rights reserved.
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            const yearElement = document.getElementById('current-year');
+            if (yearElement) {
+                yearElement.textContent = new Date().getFullYear();
+            }
+        })();
+    </script>
+</footer>
+
+
+    
+        <script type="text/javascript" src="https://unpkg.com/lucide@latest?v=may-05--synkn-ver-05" defer></script>
+    
+        <script type="text/javascript" src="/assets/js/synczone.js?v=may-05--synkn-ver-05" defer></script>
+    
+
+
+</body>
+</html>
