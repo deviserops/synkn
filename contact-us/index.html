@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -15,7 +16,7 @@
 
     <!-- Meta Keyword For Page -->
     <meta name="keywords" content="Synkn">
-    <meta name="description" content="Synkn">
+    <meta name="description" content="Bring Business Together. Digital tools built with passion.">
     <meta name="author" content="Synkn">
 
     <!-- Favicon -->
@@ -26,114 +27,114 @@
     <!-- Manifest Json -->
     <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
 
-    <!-- Load Page-specific Tailwind CSS -->
-    <link rel="preload" href="/assets/css/global.css?v=jun-06-e-synkn-ver-06" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/assets/css/global.css?v=jun-06-e-synkn-ver-06"></noscript>
+    <!-- Load Tailwind CSS / And Global CSS -->
+    <link rel="preload" href="/assets/tailwind/compiled.css?v=2026" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/assets/tailwind/compiled.css?v=2026"></noscript>
 
-    <link rel="preload" href="/assets/css/base.css?v=jun-06-e-synkn-ver-06" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/assets/css/base.css?v=jun-06-e-synkn-ver-06"></noscript>
+    <link rel="preload" href="/assets/css/style.css?v=2026" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/assets/tailwind/style.css?v=2026"></noscript>
 
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
+    <!-- Page Specific CSS -->
     
 
 </head>
-<body>
-
-<!-- Full Page Loader -->
-<div id="loader" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-white/80 backdrop-blur-sm">
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100 min-h-screen flex flex-col justify-between">
+    <div id="loader" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-white/80 backdrop-blur-sm">
   <div class="flex flex-col items-center">
     <div class="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
     <p class="mt-4 text-gray-700 font-medium">Loading...</p>
   </div>
 </div>
 
-<!-- Header & Navigation -->
-<header class="bg-white shadow-md sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        <a href="/" class="relative inline-block">
+    <header class="w-full bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+
+      <div class="flex items-center">
+        <a href="/" class="text-xl font-black tracking-tight text-sky-600 dark:text-sky-400 hover:opacity-90 relative inline-block">
             <img src="/assets/images/logo.png" class="h-5" alt="Synkn"/>
             <span class="absolute -top-2.5 -right-4 font-bold text-gray-500">™</span>
         </a>
-        <nav class="hidden md:flex space-x-8 text-gray-600 font-medium">
-            <a href="/#products" class="hover:text-primary-teal transition duration-150">Products</a>
-            <a href="/#contact" class="hover:text-primary-teal transition duration-150">Contact</a>
-        </nav>
-        <a href="/#products" class="md:inline-flex hidden px-4 py-2 bg-primary-teal text-white text-sm font-semibold rounded-lg shadow-md hover:bg-secondary-teal transition duration-150">See Our Work</a>
+      </div>
+
+      <nav class="hidden sm:flex items-center space-x-6 text-sm font-medium text-slate-600 dark:text-slate-300">
+        <a href="/#products" class="hover:text-primary-teal transition duration-150">Products</a>
+        <a href="/#contact" class="hover:text-primary-teal transition duration-150">Contact</a>
+      </nav>
+
+      <div class="flex items-center">
+        <button id="theme-toggle" class="cursor-pointer p-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-700 text-sm">
+          <span class="inline dark:hidden">🌙 Mode</span>
+          <span class="hidden dark:inline">☀️ Mode</span>
+        </button>
+      </div>
     </div>
 </header>
 
-<!-- Main Content -->
-
+    <main class="w-full">
+        
 <!-- Contact Section -->
-<section class="py-20 sm:py-32 bg-light-bg">
+<section class="w-full py-20 sm:py-32 bg-slate-50 dark:bg-[#0b1329] transition-colors duration-300">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4">
-                Let's <span class="gradient-text">Connect</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-[#0f172a] dark:text-white mb-4 tracking-tight">
+                Let's <span class="text-teal-600 dark:text-[#14c3a5]">Connect</span>
             </h1>
-            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p class="text-xl text-slate-500 dark:text-slate-400 max-w-2xl mx-auto font-normal leading-relaxed">
                 Whether you have a question about our products, need support, or want to discuss a new project, we're
                 here to help.
             </p>
         </div>
 
-        <div class="grid lg:grid-cols-2 gap-12">
-            <!-- Email Contact Card -->
-            <div class="bg-white p-8 sm:p-10 rounded-xl shadow-xl h-full border border-teal-100 flex flex-col justify-center">
-                <h2 class="text-2xl font-bold mb-6 text-gray-800">Primary Support Channel</h2>
+        <div class="grid lg:grid-cols-2 gap-12 items-stretch">
+            <div class="bg-white dark:bg-[#1c2541] p-8 sm:p-10 rounded-2xl shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-100 dark:border-slate-800/60 flex flex-col justify-center transition-colors duration-300">
+                <h2 class="text-2xl font-bold mb-6 text-[#0f172a] dark:text-white tracking-tight">Primary Support Channel</h2>
                 <div class="space-y-6">
-                    <!-- Email Support -->
                     <div class="flex items-start space-x-4">
-                        <svg class="w-6 h-6 text-primary-teal flex-shrink-0 mt-1" fill="none" stroke="currentColor"
+                        <svg class="w-6 h-6 text-teal-600 dark:text-[#14c3a5] flex-shrink-0 mt-1" fill="none" stroke="currentColor"
                              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-1 12H4a2 2 0 01-2-2V6a2 2 0 012-2h16a2 2 0 012 2v12a2 2 0 01-2 2z"></path>
                         </svg>
                         <div>
-                            <p class="text-sm font-semibold text-gray-500 uppercase tracking-wider">General & Support
+                            <p class="text-sm font-semibold text-slate-400 dark:text-slate-500 uppercase tracking-wider">General & Support
                                 Email</p>
                             <a href="mailto:contact@synkn.app"
-                               class="text-lg font-medium text-gray-800 hover:text-primary-teal">contact@synkn.app</a>
-                            <p class="text-gray-500 text-sm mt-1">We aim to respond to all inquiries within 24
+                               class="text-lg font-bold text-slate-800 dark:text-slate-200 hover:text-teal-500 dark:hover:text-[#10b296] transition-colors">contact@synkn.app</a>
+                            <p class="text-slate-500 dark:text-slate-400 text-sm mt-1 leading-relaxed font-normal">We aim to respond to all inquiries within 24
                                 hours.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Contact Form Card -->
-            <div class="bg-white p-8 sm:p-10 rounded-xl shadow-xl border border-teal-100">
-                <h2 class="text-2xl font-bold mb-6 text-gray-800">Send Us a Message</h2>
-                <form class="space-y-4" id="contactForm">
+            <div class="bg-white dark:bg-[#1c2541] p-8 sm:p-10 rounded-2xl shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-100 dark:border-slate-800/60 transition-colors duration-300">
+                <h2 class="text-2xl font-bold mb-6 text-[#0f172a] dark:text-white tracking-tight">Send Us a Message</h2>
+                <form class="space-y-5" id="contactForm">
                     <input type="text" name="hp_field" style="display:none" tabindex="-1" autocomplete="off">
                     <input name="secret" id="secret" value="" type="hidden">
                     <input name="origin" id="origin" value="" type="hidden">
 
-                    <!-- Name Field -->
                     <div>
-                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                        <label for="name" class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2 tracking-wide">Full Name</label>
                         <input type="text" id="name" name="name" required
-                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary-teal focus:border-primary-teal transition duration-150"
+                               class="w-full px-4 py-3 bg-slate-50 dark:bg-[#2e3b5e] border border-slate-200 dark:border-transparent rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 dark:focus:ring-[#14c3a5] text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-400/70 text-sm sm:text-base transition duration-150 shadow-inner"
                                placeholder="Jane Doe">
                     </div>
-                    <!-- Email Field -->
                     <div>
-                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                        <label for="email" class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2 tracking-wide">Email Address</label>
                         <input type="email" id="email" name="email" required
-                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary-teal focus:border-primary-teal transition duration-150"
+                               class="w-full px-4 py-3 bg-slate-50 dark:bg-[#2e3b5e] border border-slate-200 dark:border-transparent rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 dark:focus:ring-[#14c3a5] text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-400/70 text-sm sm:text-base transition duration-150 shadow-inner"
                                placeholder="jane@example.com">
                     </div>
-                    <!-- Message Field -->
                     <div>
-                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Your Message</label>
+                        <label for="message" class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2 tracking-wide">Your Message</label>
                         <textarea id="message" name="message" rows="5" required
-                                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary-teal focus:border-primary-teal transition duration-150"
+                                  class="w-full px-4 py-3 bg-slate-50 dark:bg-[#2e3b5e] border border-slate-200 dark:border-transparent rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 dark:focus:ring-[#14c3a5] text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-400/70 text-sm sm:text-base transition duration-150 resize-y shadow-inner"
                                   placeholder="How can we help you with our products?"></textarea>
                     </div>
-                    <!-- Submit Button -->
                     <button type="submit" id="submitButton"
-                            class="w-full flex justify-center py-3 px-4 border border-transparent rounded-xl shadow-md text-sm font-bold text-white bg-primary-teal hover:bg-secondary-teal transition duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-teal">
+                            class="w-full flex justify-center py-4 px-4 border border-transparent rounded-xl shadow-md text-base font-bold text-white dark:text-[#0b1329] bg-teal-600 hover:bg-teal-500 dark:bg-[#14c3a5] dark:hover:bg-[#10b296] transition duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 dark:focus:ring-offset-0 transform active:scale-[0.99]">
                         Send Message
                     </button>
                 </form>
@@ -142,19 +143,18 @@
         </div>
     </div>
 </section>
+    </main>
 
-
-<!-- Footer Section for Static Pages and Copyright -->
-<footer class="bg-gray-800 text-gray-400 py-10">
+    <footer class="bg-gray-800 text-gray-400 py-10">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
             <!-- Logo/Branding -->
             <div>
-                <a href="/" class="relative inline-block text-2xl font-extrabold text-white">
-                    Synkn
-                    <span class="absolute -top-1 -right-4 font-medium uppercase">™</span>
+                <a href="/" class="relative inline-block font-extrabold text-white relative inline-block">
+                    <img src="/assets/images/logo.png" class="h-5" alt="Synkn"/>
+                    <span class="absolute -top-2.5 -right-4 font-bold text-gray-500">™</span>
                 </a>
-                <p class="text-sm mt-2 text-gray-300">Digital tools built with passion.</p>
+                <p class="text-sm mt-2 text-gray-300">Bring Business Together. Digital tools built with passion.</p>
             </div>
 
             <!-- Product Links -->
@@ -190,7 +190,7 @@
 
         <!-- Copyright and Social Icons (Placeholder) -->
         <div class="pt-8 border-t border-gray-700 text-center text-sm">
-            &copy; <span id="current-year"></span> synkn.app. All rights reserved.
+            &copy; <span id="current-year"></span> Synkn. All rights reserved.
         </div>
     </div>
 
@@ -204,11 +204,14 @@
     </script>
 </footer>
 
+    <!-- Load Tailwind Theme JS -->
+    <script src="/assets/tailwind/theme.js?v=2026"></script>
 
+    <!-- Page Specific JS -->
     
-        <script type="text/javascript" src="/assets/js/contact_us.js?v=jun-06-e-synkn-ver-06" defer></script>
+        
+            <script type="text/javascript" src="/assets/js/contact_us.js?v=2026" defer></script>
+        
     
-
-
 </body>
 </html>

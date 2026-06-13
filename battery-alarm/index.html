@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -14,8 +15,8 @@
     <title>Battery Alarm | Synkn</title>
 
     <!-- Meta Keyword For Page -->
-    <meta name="keywords" content="battery alarm, battery saver, battery check, battery optimizer">
-    <meta name="description" content="The smart app that notifies you when your battery hits custom high or low thresholds, protecting against damage and significantly extending its lifespan.">
+    <meta name="keywords" content="battery alarm, battery health app, prevent overcharging, stop overcharge alert, battery lifespan extender, 80 percent charge notification, low battery alarm, android utility app, battery saver, battery cycle longevity">
+    <meta name="description" content="Protect your device from overcharging and deep discharge. Set custom high/low alerts (like 20-80%) to prevent heat damage and extend battery lifespan.">
     <meta name="author" content="Synkn">
 
     <!-- Favicon -->
@@ -26,73 +27,79 @@
     <!-- Manifest Json -->
     <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
 
-    <!-- Load Page-specific Tailwind CSS -->
-    <link rel="preload" href="/assets/css/global.css?v=jun-06-e-synkn-ver-06" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/assets/css/global.css?v=jun-06-e-synkn-ver-06"></noscript>
+    <!-- Load Tailwind CSS / And Global CSS -->
+    <link rel="preload" href="/assets/tailwind/compiled.css?v=2026" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/assets/tailwind/compiled.css?v=2026"></noscript>
 
-    <link rel="preload" href="/assets/css/base.css?v=jun-06-e-synkn-ver-06" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/assets/css/base.css?v=jun-06-e-synkn-ver-06"></noscript>
+    <link rel="preload" href="/assets/css/style.css?v=2026" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/assets/tailwind/style.css?v=2026"></noscript>
 
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
+    <!-- Page Specific CSS -->
     
         
-            <link rel="preload" href="/assets/css/battery-alarm.css?v=jun-06-e-synkn-ver-06" as="style" onload="this.onload=null;this.rel='stylesheet'">
-            <noscript><link rel="stylesheet" href="/assets/css/battery-alarm.css?v=jun-06-e-synkn-ver-06"></noscript>
+            <link rel="preload" href="/assets/css/battery-alarm.css?v=2026" as="style" onload="this.onload=null;this.rel='stylesheet'">
+            <noscript><link rel="stylesheet" href="/assets/css/battery-alarm.css?v=2026"></noscript>
         
     
 
 </head>
-<body>
-
-<!-- Full Page Loader -->
-<div id="loader" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-white/80 backdrop-blur-sm">
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100 min-h-screen flex flex-col justify-between">
+    <div id="loader" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-white/80 backdrop-blur-sm">
   <div class="flex flex-col items-center">
     <div class="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
     <p class="mt-4 text-gray-700 font-medium">Loading...</p>
   </div>
 </div>
 
-<!-- Header & Navigation -->
-<header class="bg-white shadow-md sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        <a href="/" class="relative inline-block">
+    <header class="w-full bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+
+      <div class="flex items-center">
+        <a href="/" class="text-xl font-black tracking-tight text-sky-600 dark:text-sky-400 hover:opacity-90 relative inline-block">
             <img src="/assets/images/logo.png" class="h-5" alt="Synkn"/>
             <span class="absolute -top-2.5 -right-4 font-bold text-gray-500">™</span>
         </a>
-        <nav class="hidden md:flex space-x-8 text-gray-600 font-medium">
-            <a href="/#products" class="hover:text-primary-teal transition duration-150">Products</a>
-            <a href="/#contact" class="hover:text-primary-teal transition duration-150">Contact</a>
-        </nav>
-        <a href="/#products" class="md:inline-flex hidden px-4 py-2 bg-primary-teal text-white text-sm font-semibold rounded-lg shadow-md hover:bg-secondary-teal transition duration-150">See Our Work</a>
+      </div>
+
+      <nav class="hidden sm:flex items-center space-x-6 text-sm font-medium text-slate-600 dark:text-slate-300">
+        <a href="/#products" class="hover:text-primary-teal transition duration-150">Products</a>
+        <a href="/#contact" class="hover:text-primary-teal transition duration-150">Contact</a>
+      </nav>
+
+      <div class="flex items-center">
+        <button id="theme-toggle" class="cursor-pointer p-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-700 text-sm">
+          <span class="inline dark:hidden">🌙 Mode</span>
+          <span class="hidden dark:inline">☀️ Mode</span>
+        </button>
+      </div>
     </div>
 </header>
 
-<!-- Main Content -->
-
+    <main class="w-full">
+        
 <!-- Adjusted padding back to pt-32, combined with the higher Z-index on the header, this should fix the overlap. Removed mt-10 from inner div. -->
-<section class="bg-dark-bg text-white pt-32 pb-16 sm:pb-24 overflow-hidden">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+<section class="relative w-full pt-40 pb-20 sm:pb-32 bg-slate-50 dark:bg-[#0b1329] overflow-hidden transition-colors duration-300">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-slate-100/50 via-transparent to-transparent dark:from-teal-950/20 dark:via-transparent dark:to-transparent pointer-events-none"></div>
 
-        <!-- Text Content -->
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center z-10">
+
         <div class="md:w-1/2 mb-12 md:mb-0 z-10">
             <div class="flex items-center space-x-4 mb-6">
-                <!-- Icon Placeholder -->
                 <img src="/assets/images/battery_alarm.png" width="80" height="80" alt="Battery Alarm Icon"
-                     class="rounded-2xl shadow-lg">
-                <span class="px-3 py-1 bg-teal-900 text-teal-300 text-xs font-bold uppercase tracking-wider rounded-full">Essential Utility</span>
+                     class="rounded-2xl shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-100 dark:border-slate-800/40">
+                <span class="px-3 py-1 bg-teal-50 dark:bg-teal-950/50 text-teal-700 dark:text-[#14c3a5] text-xs font-bold uppercase tracking-wider rounded-lg border border-teal-100/50 dark:border-teal-900/30">Essential Utility</span>
             </div>
-            <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
-                Battery Alarm: <span class="gradient-text">Maximize Your Battery Health & Lifespan.</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-[1.15] mb-6 text-slate-900 dark:text-white">
+                Battery Alarm: <span class="text-teal-600 dark:text-[#14c3a5]">Maximize Your Battery Health & Lifespan.</span>
             </h1>
-            <p class="text-lg text-gray-400 mb-8 max-w-lg">
+            <p class="text-lg text-slate-500 dark:text-slate-400 mb-10 max-w-lg leading-relaxed font-normal">
                 The smart app that notifies you when your battery hits custom high or low thresholds, protecting against
                 damage and significantly extending its lifespan.
             </p>
-            <div class="flex space-x-4">
+            <div class="flex items-center space-x-4">
                 <a href="https://play.google.com/store/apps/details?id=app.synkn.battery_alarm" target="_blank"
-                   class="flex items-center px-6 py-3 bg-primary-teal text-white font-bold rounded-xl shadow-lg hover:bg-secondary-teal transition">
-                    <!-- Placeholder for Download Button -->
+                   class="flex items-center px-6 py-3.5 bg-teal-600 hover:bg-teal-500 dark:bg-[#14c3a5] dark:hover:bg-[#10b296] text-white dark:text-[#0b1329] font-bold rounded-xl shadow-lg shadow-teal-600/10 dark:shadow-[#14c3a5]/10 hover:shadow-xl hover:-translate-y-0.5 transition duration-200">
                     <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"
                          xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4c-3.72 0-6.81 2.53-7.7 6.04C2.88 10.42 2 11.77 2 13c0 2.21 1.79 4 4 4h13c2.21 0 4-1.79 4-4 0-2.05-1.53-3.76-3.65-3.96zM15 15h-2v2h-2v-2H9l3-3 3 3z"/>
@@ -100,20 +107,17 @@
                     Download Now
                 </a>
                 <a href="#learn_more"
-                   class="flex items-center px-6 py-3 bg-dark-card border border-gray-700 text-gray-300 font-bold rounded-xl hover:bg-gray-700 transition">
+                   class="flex items-center px-6 py-3.5 bg-white dark:bg-[#1c2541] border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 font-bold rounded-xl shadow-sm hover:bg-slate-50 dark:hover:bg-[#232f54] hover:border-slate-300 dark:hover:border-slate-700 hover:-translate-y-0.5 transition duration-200">
                     Learn More
                 </a>
             </div>
         </div>
 
-        <!-- Image/Mockup Placeholder -->
         <div class="md:w-1/2 relative flex justify-center mt-10 md:mt-0">
-            <!-- Abstract Glow -->
-            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-primary-teal opacity-20 blur-[80px] rounded-full"></div>
-            <!-- Dummy Phone Mockup (Battery focused screen) -->
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-teal-500 dark:bg-[#14c3a5] opacity-10 dark:opacity-20 blur-[80px] rounded-full"></div>
             <img src="/assets/images/battery_alarm_full.jpeg"
-                 width="320" height="640" alt="App Screenshot showing battery limits"
-                 class="relative z-10 rounded-[3rem] border-8 border-gray-800 shadow-2xl transform rotate-5 hover:rotate-0 transition duration-500">
+                 width="290" height="580" alt="App Screenshot showing battery limits"
+                 class="relative z-10 rounded-[2.75rem] border-[7px] border-slate-900 dark:border-slate-800 shadow-2xl shadow-slate-900/10 dark:shadow-black/50 transform rotate-3 hover:rotate-0 transition duration-500 ease-out">
         </div>
     </div>
 </section>
@@ -155,18 +159,18 @@
     </div>
 </section>
 
+    </main>
 
-<!-- Footer Section for Static Pages and Copyright -->
-<footer class="bg-gray-800 text-gray-400 py-10">
+    <footer class="bg-gray-800 text-gray-400 py-10">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
             <!-- Logo/Branding -->
             <div>
-                <a href="/" class="relative inline-block text-2xl font-extrabold text-white">
-                    Synkn
-                    <span class="absolute -top-1 -right-4 font-medium uppercase">™</span>
+                <a href="/" class="relative inline-block font-extrabold text-white relative inline-block">
+                    <img src="/assets/images/logo.png" class="h-5" alt="Synkn"/>
+                    <span class="absolute -top-2.5 -right-4 font-bold text-gray-500">™</span>
                 </a>
-                <p class="text-sm mt-2 text-gray-300">Digital tools built with passion.</p>
+                <p class="text-sm mt-2 text-gray-300">Bring Business Together. Digital tools built with passion.</p>
             </div>
 
             <!-- Product Links -->
@@ -202,7 +206,7 @@
 
         <!-- Copyright and Social Icons (Placeholder) -->
         <div class="pt-8 border-t border-gray-700 text-center text-sm">
-            &copy; <span id="current-year"></span> synkn.app. All rights reserved.
+            &copy; <span id="current-year"></span> Synkn. All rights reserved.
         </div>
     </div>
 
@@ -216,7 +220,10 @@
     </script>
 </footer>
 
+    <!-- Load Tailwind Theme JS -->
+    <script src="/assets/tailwind/theme.js?v=2026"></script>
 
-
+    <!-- Page Specific JS -->
+    
 </body>
 </html>

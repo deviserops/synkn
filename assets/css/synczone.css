@@ -1,1 +1,18 @@
-@keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-10px)}to{transform:translateY(0)}}.animate-float{animation:6s ease-in-out infinite float}.glass-panel{-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);background:#151c2cb3;border:1px solid #ffffff0d}
+/* Custom Animations for the SyncZone Hero Section
+*/
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Optional glass panel utility used in the standalone version */
+.glass-panel {
+    background: rgba(21, 28, 44, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}

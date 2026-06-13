@@ -1,0 +1,8 @@
+/* Essential dynamic ambient glow definitions for JS toggle functionality */
+.glow-dot {
+    transition: all 0.5s ease;
+}
+.glow-yellow { box-shadow: 0 0 20px rgba(245, 158, 11, 0.6); }
+.glow-emerald { box-shadow: 0 0 20px rgba(16, 185, 129, 0.6); }
+.glow-purple { box-shadow: 0 0 20px rgba(168, 85, 247, 0.6); }
+.glow-sky { box-shadow: 0 0 20px rgba(14, 165, 233, 0.6); }
