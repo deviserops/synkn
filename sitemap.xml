@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://localhost:8080/battery-alarm/</loc>
+    <loc>https://synkn.app/battery-alarm/</loc>
     <lastmod>2026-06-13T11:21:12.589Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:8080/battery-alarm/privacy-policy/</loc>
+    <loc>https://synkn.app/battery-alarm/privacy-policy/</loc>
     <lastmod>2026-06-13T11:21:12.591Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:8080/</loc>
+    <loc>https://synkn.app/</loc>
     <lastmod>2026-06-13T11:21:27.938Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:8080/contact-us/</loc>
+    <loc>https://synkn.app/contact-us/</loc>
     <lastmod>2026-06-13T11:21:27.943Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:8080/focus-desk/</loc>
+    <loc>https://synkn.app/focus-desk/</loc>
     <lastmod>2026-06-13T11:21:27.949Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:8080/focus-desk/privacy-policy/</loc>
+    <loc>https://synkn.app/focus-desk/privacy-policy/</loc>
     <lastmod>2026-06-13T12:10:45.409Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:8080/sync-zone/</loc>
+    <loc>https://synkn.app/sync-zone/</loc>
     <lastmod>2026-06-13T12:17:44.127Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

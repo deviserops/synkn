@@ -5,4 +5,4 @@ Allow: /
 
 # Host & Sitemap Locations
 Host: synkn.app
-Sitemap: http://localhost:8080/sitemap.xml
+Sitemap: https://synkn.app/sitemap.xml
