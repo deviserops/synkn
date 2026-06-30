@@ -1,0 +1,19 @@
+.glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.gradient-text {
+    background: linear-gradient(to r, #2dd4bf, #22d3ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.phone-mockup {
+    border: 8px solid #1e293b;
+    border-radius: 3rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+}

@@ -48,4 +48,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://synkn.app/slab-stack/</loc>
+    <lastmod>2026-06-30T21:38:18.604Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>
