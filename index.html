@@ -116,7 +116,8 @@
             <div class="group bg-slate-50 dark:bg-[#1c2541] p-8 sm:p-10 rounded-2xl shadow-sm hover:shadow-xl border border-slate-200/60 dark:border-slate-800/60 hover:border-teal-500/30 dark:hover:border-[#14c3a5]/30 flex flex-col justify-between transition-all duration-300 transform hover:-translate-y-1">
                 <div>
                     <div class="w-14 h-14 rounded-xl bg-white dark:bg-[#232f54] shadow-sm flex items-center justify-center text-3xl mb-6 border border-slate-100 dark:border-slate-700/50 group-hover:scale-110 transition-transform duration-300">
-                        <img src="/assets/images/battery_alarm.png" width="80" height="80" alt="Battery Alarm Icon" class="rounded-2xl shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-100 dark:border-slate-800/40">
+                        <img src="/assets/images/battery_alarm.png" width="80" height="80" alt="Battery Alarm Icon"
+                             class="rounded-2xl shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-100 dark:border-slate-800/40">
                     </div>
                     <h3 class="text-xl font-bold mb-2 text-[#0f172a] dark:text-white tracking-tight leading-snug group-hover:text-teal-600 dark:group-hover:text-[#14c3a5] transition-colors">
                         Battery Alarm (Battery Health)
@@ -166,7 +167,8 @@
             <div class="group bg-slate-50 dark:bg-[#1c2541] p-8 sm:p-10 rounded-2xl shadow-sm hover:shadow-xl border border-slate-200/60 dark:border-slate-800/60 hover:border-teal-500/30 dark:hover:border-[#14c3a5]/30 flex flex-col justify-between transition-all duration-300 transform hover:-translate-y-1">
                 <div>
                     <div class="w-14 h-14 rounded-xl bg-white dark:bg-[#232f54] shadow-sm flex items-center justify-center text-3xl mb-6 border border-slate-100 dark:border-slate-700/50 group-hover:scale-110 transition-transform duration-300">
-                        <img src="/assets/images/focus_desk.png" width="80" height="80" alt="FocusDesk Icon" class="rounded-2xl shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-100 dark:border-slate-800/40">
+                        <img src="/assets/images/focus_desk.png" width="80" height="80" alt="FocusDesk Icon"
+                             class="rounded-2xl shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-100 dark:border-slate-800/40">
                     </div>
                     <h3 class="text-xl font-bold mb-2 text-[#0f172a] dark:text-white tracking-tight leading-snug group-hover:text-teal-600 dark:group-hover:text-[#14c3a5] transition-colors">
                         FocusDesk (Work in Flow, Rest in Peace)
@@ -175,11 +177,39 @@
                         Ambient Productivity Companion
                     </span>
                     <p class="text-slate-500 dark:text-slate-400 text-sm sm:text-base leading-relaxed mb-8 font-normal">
-                        An elegant ambient productivity companion designed to stay awake with you. Program structured day planner tasks, trigger scheduled alarms, or dim custom desk light configurations overnight.
+                        An elegant ambient productivity companion designed to stay awake with you. Program structured
+                        day planner tasks, trigger scheduled alarms, or dim custom desk light configurations overnight.
                     </p>
                 </div>
                 <div>
                     <a href="/focus-desk"
+                       class="text-[#14c3a5] font-bold text-sm sm:text-base hover:opacity-80 transition duration-150 inline-flex items-center">
+                        View Details <span
+                            class="ml-1.5 transform group-hover:translate-x-1.5 transition-transform duration-200">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="group bg-slate-50 dark:bg-[#1c2541] p-8 sm:p-10 rounded-2xl shadow-sm hover:shadow-xl border border-slate-200/60 dark:border-slate-800/60 hover:border-teal-500/30 dark:hover:border-[#14c3a5]/30 flex flex-col justify-between transition-all duration-300 transform hover:-translate-y-1">
+                <div>
+                    <div class="w-14 h-14 rounded-xl bg-white dark:bg-[#232f54] shadow-sm flex items-center justify-center text-3xl mb-6 border border-slate-100 dark:border-slate-700/50 group-hover:scale-110 transition-transform duration-300">
+                        <img src="/assets/images/slab_stack.png" width="80" height="80" alt="FocusDesk Icon"
+                             class="rounded-2xl shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-100 dark:border-slate-800/40">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-[#0f172a] dark:text-white tracking-tight leading-snug group-hover:text-teal-600 dark:group-hover:text-[#14c3a5] transition-colors">
+                        SlabStack | Infinite Isometric Stacker
+                    </h3>
+                    <span class="inline-block bg-[#e2fbf5] dark:bg-teal-950/40 text-[#14c3a5] text-xs font-bold px-3 py-1 rounded-lg mb-5 tracking-wide border border-teal-100/50 dark:border-teal-900/30">
+                        Arcade Challenge
+                    </span>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm sm:text-base leading-relaxed mb-8 font-normal">
+                        Master the ultimate test of timing and precision. Align moving slabs perfectly in gorgeous
+                        isometric 3D
+                        space across three distinct geometric modes. One wrong step, and your tower shrinks!
+                    </p>
+                </div>
+                <div>
+                    <a href="/slab-stack"
                        class="text-[#14c3a5] font-bold text-sm sm:text-base hover:opacity-80 transition duration-150 inline-flex items-center">
                         View Details <span
                             class="ml-1.5 transform group-hover:translate-x-1.5 transition-transform duration-200">→</span>
@@ -258,9 +288,10 @@
                 <ul class="space-y-2 text-sm">
                     <!-- Footer links now use hover:text-primary-teal -->
                     <li><a href="/battery-alarm" class="hover:text-primary-teal transition duration-150">Battery Alarm</a></li>
+                    <li><a href="/focus-desk" class="hover:text-primary-teal transition duration-150">FocusDesk</a></li>
                     <!-- <li><a href="/glow-sync" class="hover:text-primary-teal transition duration-150">GlowSync</a></li> -->
                     <li><a href="/sync-zone" class="hover:text-primary-teal transition duration-150">SyncZone</a></li>
-                    <li><a href="/focus-desk" class="hover:text-primary-teal transition duration-150">FocusDesk</a></li>
+                    <li><a href="/slab-stack" class="hover:text-primary-teal transition duration-150">SlabStack</a></li>
                 </ul>
             </div>
 
@@ -270,6 +301,7 @@
                 <ul class="space-y-2 text-sm">
                     <li><a href="/battery-alarm/privacy-policy" class="hover:text-primary-teal transition duration-150">Battery Privacy Policy</a></li>
                     <li><a href="/focus-desk/privacy-policy" class="hover:text-primary-teal transition duration-150">FocusDesk Privacy Policy</a></li>
+                    <li><a href="/slab-stack/privacy-policy" class="hover:text-primary-teal transition duration-150">SlabStack Privacy Policy</a></li>
 
                 </ul>
             </div>
@@ -278,9 +310,8 @@
             <div>
                 <h4 class="text-white font-semibold mb-3">Quick Links</h4>
                 <ul class="space-y-2 text-sm">
-                    <li><a href="/#home" class="hover:text-primary-teal transition duration-150">Home</a></li>
-                    <li><a href="/#products" class="hover:text-primary-teal transition duration-150">Products</a></li>
                     <li><a href="/contact-us" class="hover:text-primary-teal transition duration-150">Contact Us</a></li>
+                    <li><a href="/#products" class="hover:text-primary-teal transition duration-150">Products</a></li>
                 </ul>
             </div>
 
