@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5">
+
+    <!-- For Security Contact Us Page Submit -->
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- Title For the page -->
+    <title>Systems Engineering &amp; Backend Architecture Portfolio | synkn.app | Synkn</title>
+
+    <!-- Meta Keyword For Page -->
+    <meta name="keywords" content="synkn.app Portfolio, Backend Case Studies, Systems Architecture, API Scalability, Laravel, Django, Performance Optimization, Database Scaling">
+    <meta name="description" content="Explore production-grade backend architectures, transactional APIs, database optimizations, and developer utilities engineered for high-scale performance and reliability.">
+    <meta name="author" content="Synkn">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png ">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+
+    <!-- Manifest Json -->
+    <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
+
+    <!-- Load Tailwind CSS / And Global CSS -->
+    <link rel="preload" href="/assets/tailwind/compiled.css?v=2026" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/assets/tailwind/compiled.css?v=2026"></noscript>
+
+    <link rel="preload" href="/assets/tailwind/style.css?v=2026" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/assets/tailwind/style.css?v=2026"></noscript>
+
+
+    <!-- Page Specific CSS -->
+    
+
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100 min-h-screen flex flex-col justify-between">
+    <div id="loader" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-white/80 backdrop-blur-sm">
+  <div class="flex flex-col items-center">
+    <div class="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+    <p class="mt-4 text-gray-700 font-medium">Loading...</p>
+  </div>
+</div>
+
+    <header class="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/80 backdrop-blur dark:border-slate-900 dark:bg-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
+
+      <!-- Brand Logo -->
+      <a href="/" class="text-xl font-black tracking-tight text-sky-600 dark:text-sky-400 hover:opacity-90 relative inline-block">
+          <img src="/assets/images/logo.png" class="h-5" alt="Synkn"/>
+          <span class="absolute -top-2.5 -right-4 font-bold text-gray-500">™</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+        <a href="/case-study" class="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">Case Studies</a>
+        <a href="/#products" class="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">Products</a>
+        <a href="/#contact" class="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">Contact</a>
+      </nav>
+
+      <!-- Utilities & Mode Toggler -->
+      <div class="flex items-center space-x-4">
+        <!-- Theme Switcher Button -->
+        <button id="theme-toggle" class="cursor-pointer p-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-700 text-sm">
+          <span class="inline dark:hidden">🌙 Mode</span>
+          <span class="hidden dark:inline">☀️ Mode</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+    <main class="w-full">
+        
+<!-- START OF PORTABLE CASE STUDIES INDEX SECTION -->
+<section id="portfolio-view" class="bg-slate-50 dark:bg-slate-950 py-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-12">
+      <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 mb-4 border border-indigo-500/20 tracking-wider uppercase">
+        System Reliability & Business Growth
+      </span>
+            <h2 class="text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
+                Systems Engineering Portfolio
+            </h2>
+            <p class="mt-4 text-base sm:text-lg text-slate-600 dark:text-slate-400">
+                A comprehensive catalog of transactional APIs, database architectures, microservice structures, and
+                developer libraries built to scale performance and secure business workflows.
+            </p>
+        </div>
+
+        <!-- Dynamic Controls (Filters & Tech Stack Search) -->
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800/80 rounded-2xl p-6 mb-12 shadow-sm">
+            <div class="flex flex-col lg:flex-row gap-6 items-center justify-between">
+                <!-- Filter Tabs -->
+                <div class="flex flex-wrap justify-center lg:justify-start gap-2 sm:gap-3 w-full lg:w-auto">
+                    <button id="filter-all"
+                            class="filter-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold shadow-md border transition-all duration-200 bg-indigo-600 text-white border-indigo-600"
+                            onclick="casestudy_js.filterProjects('all')">
+                        All Environments
+                    </button>
+                    <button id="filter-company"
+                            class="filter-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold shadow-sm border transition-all duration-200 bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 dark:bg-slate-950 dark:text-slate-300 dark:border-slate-800 dark:hover:bg-slate-900 dark:hover:text-white"
+                            onclick="casestudy_js.filterProjects('company')">
+                        Enterprise & Agency Work
+                    </button>
+                    <button id="filter-personal"
+                            class="filter-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold shadow-sm border transition-all duration-200 bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 dark:bg-slate-950 dark:text-slate-300 dark:border-slate-800 dark:hover:bg-slate-900 dark:hover:text-white"
+                            onclick="casestudy_js.filterProjects('personal')">
+                        Developer Libraries & Tools
+                    </button>
+                </div>
+
+                <!-- Real-time Tech Stack Filter Input -->
+                <div class="relative w-full lg:w-80">
+          <span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <svg class="h-4 w-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+            </svg>
+          </span>
+                    <input type="text" id="techSearch" placeholder="Search by tech (e.g., Laravel, Python)"
+                           class="w-full pl-9 pr-4 py-2 rounded-lg border border-slate-200 bg-slate-50 dark:bg-slate-950 dark:border-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all">
+                </div>
+            </div>
+        </div>
+
+        <!-- Case Studies Project Grid -->
+        <div id="projectsGrid" class="grid gap-8 md:grid-cols-2">
+
+            <!-- PROJECT 1: App E-Gift cards (NDA Enterprise) -->
+            <div class="project-card flex flex-col justify-between bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800/80 rounded-2xl p-6 hover:border-indigo-500/50 hover:shadow-xl hover:shadow-indigo-500/5 dark:hover:border-indigo-500/40 transition-all duration-300 group"
+                 data-category="company"
+                 data-tech="laravel, php, mysql, aws bucket, ec2 hosting, docker, ubuntu, novatti payment, webhook, rest api">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20">
+              Ongraph Technologies • NDA Compliant
+            </span>
+                        <span class="flex items-center text-xs text-emerald-600 dark:text-emerald-400 font-medium">
+              <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse mr-2"></span> Custom Ledger
+            </span>
+                    </div>
+
+                    <div class="mb-3">
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                            Enterprise POS-Linked Virtual E-Gift Card Engine
+                        </h3>
+                        <span class="inline-flex items-center text-xs text-slate-400 mt-1 cursor-not-allowed">
+              <svg class="h-3 w-3 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+              </svg> Private Internal System
+            </span>
+                    </div>
+
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">Laravel / PHP</span>
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">MySQL</span>
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">AWS S3 / EC2</span>
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">Novatti Gateways</span>
+                    </div>
+
+                    <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                        Designed a virtual gift card ledger system operating entirely independent of public payment
+                        gateways. Supports 4 tenant roles handling in-store balance updates, offline POS transaction
+                        approvals, and automated balance checks.
+                    </p>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+                    <div>
+                        <span class="block text-[10px] uppercase font-bold tracking-wider text-slate-400 dark:text-slate-500">Business Result</span>
+                        <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400">Zero-latency In-Store Verification</span>
+                    </div>
+                    <a href="#/case-studies/egift-engine"
+                       class="inline-flex items-center text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:underline hover:translate-x-1 transition-all duration-200">
+                        Architecture Specs &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- PROJECT 2: Fargtryckarn -->
+            <div class="project-card flex flex-col justify-between bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800/80 rounded-2xl p-6 hover:border-indigo-500/50 hover:shadow-xl hover:shadow-indigo-500/5 dark:hover:border-indigo-500/40 transition-all duration-300 group"
+                 data-category="company"
+                 data-tech="laravel, php, react, redux, typescript, mysql, aws bucket, ec2 hosting, docker, ubuntu, rest api">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20">
+              Enterprise Client
+            </span>
+                        <span class="flex items-center text-xs text-indigo-600 dark:text-indigo-400 font-medium">
+              <svg class="h-4 w-4 mr-1 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg> Real-time Customizer
+            </span>
+                    </div>
+
+                    <div class="mb-3">
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                            Fargtryckarn: High-Capacity Print-on-Demand E-Commerce Backend
+                        </h3>
+                        <a href="https://www.fargtryckarn.se/" target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center text-xs text-slate-500 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400 mt-1 transition-colors">
+                            <span>View Production Site</span>
+                            <svg class="h-3 w-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">Laravel / React</span>
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">MySQL</span>
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">AWS / EC2</span>
+                    </div>
+
+                    <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                        Developed the complex backend print sizing, pricing matrix engine, and file upload validation
+                        layers for a massive printing company established in 1999.
+                    </p>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+                    <div>
+                        <span class="block text-[10px] uppercase font-bold tracking-wider text-slate-400 dark:text-slate-500">Business Result</span>
+                        <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400">Custom Dynamic Pricing Algorithms</span>
+                    </div>
+                    <a href="#/case-studies/print-demand-backend"
+                       class="inline-flex items-center text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:underline hover:translate-x-1 transition-all duration-200">
+                        Architecture Specs &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- PROJECT 3: Morp (Ongraph) -->
+            <div class="project-card flex flex-col justify-between bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800/80 rounded-2xl p-6 hover:border-indigo-500/50 hover:shadow-xl hover:shadow-indigo-500/5 dark:hover:border-indigo-500/40 transition-all duration-300 group"
+                 data-category="company"
+                 data-tech="laravel, php, mysql, docker, ubuntu, stripe payment, webhook, rest api">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20">
+              Ongraph Technologies • Active App
+            </span>
+                        <span class="flex items-center text-xs text-emerald-600 dark:text-emerald-400 font-medium">
+              <span class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse mr-2"></span> Active
+            </span>
+                    </div>
+
+                    <div class="mb-3">
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                            Morp (The Prom App): Multi-Tenant Event & Ticketing Backend
+                        </h3>
+                        <a href="https://thepromapp.com/" target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center text-xs text-slate-500 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400 mt-1 transition-colors">
+                            <span>View Morp Platform</span>
+                            <svg class="h-3 w-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">Laravel / PHP</span>
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">MySQL</span>
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">Stripe Webhooks</span>
+                    </div>
+
+                    <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                        Architected the central transaction and ticket distribution system. Scaled custom access roles
+                        for administrators and teachers to safely publish ticket inventories with Stripe webhook escrow
+                        synchronization.
+                    </p>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+                    <div>
+                        <span class="block text-[10px] uppercase font-bold tracking-wider text-slate-400 dark:text-slate-500">Business Result</span>
+                        <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400">Automated Secure Stripe Escrow Webhooks</span>
+                    </div>
+                    <a href="#/case-studies/morp-ticketing"
+                       class="inline-flex items-center text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:underline hover:translate-x-1 transition-all duration-200">
+                        Architecture Specs &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- PROJECT 4: Sync Zone (Personal) -->
+            <div class="project-card flex flex-col justify-between bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800/80 rounded-2xl p-6 hover:border-emerald-500/50 hover:shadow-xl hover:shadow-emerald-500/5 dark:hover:border-emerald-500/40 transition-all duration-300 group"
+                 data-category="personal" data-tech="tailwind, html, css, javascript, github page, local databse">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
+              Personal Product
+            </span>
+                        <span class="flex items-center text-xs text-emerald-600 dark:text-emerald-400 font-medium">
+              <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse mr-2"></span> 100% Offline Capable
+            </span>
+                    </div>
+
+                    <div class="mb-3">
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                            Sync Zone: Multi-Timezone Meeting Coordinator
+                        </h3>
+                        <a href="https://sync-zone.synkn.app/" target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center text-xs text-slate-500 hover:text-emerald-600 dark:text-slate-400 dark:hover:text-indigo-400 mt-1 transition-colors">
+                            <span>View Production Platform</span>
+                            <svg class="h-3 w-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">HTML5 / Vanilla JS</span>
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">Local Database (IndexedDB)</span>
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">Timezone Engine</span>
+                    </div>
+
+                    <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                        Engineered a standalone timezone coordination scheduler targeting independent contractors. Built
+                        entirely on client-side IndexedDB layers.
+                    </p>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+                    <div>
+                        <span class="block text-[10px] uppercase font-bold tracking-wider text-slate-400 dark:text-slate-500">Technical Result</span>
+                        <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400">Zero Server Overhead Database Layers</span>
+                    </div>
+                    <a href="#/case-studies/sync-zone"
+                       class="inline-flex items-center text-sm font-semibold text-emerald-600 dark:text-emerald-400 hover:underline hover:translate-x-1 transition-all duration-200">
+                        Architecture Specs &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- PROJECT 5: DJ All Auth -->
+            <div class="project-card flex flex-col justify-between bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800/80 rounded-2xl p-6 hover:border-emerald-500/50 hover:shadow-xl hover:shadow-emerald-500/5 dark:hover:border-emerald-500/40 transition-all duration-300 group"
+                 data-category="personal" data-tech="python, django, pypi, package, oauth, openid">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
+              Open Source Library
+            </span>
+                        <span class="flex items-center text-xs text-emerald-600 dark:text-emerald-400 font-medium">
+              <svg class="h-4 w-4 mr-1 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+              </svg> PyPI Package
+            </span>
+                    </div>
+
+                    <div class="mb-3">
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                            dj-all-auth: Plug-and-Play Django OAuth2 Federation
+                        </h3>
+                        <a href="https://pypi.org/project/dj-all-auth/" target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center text-xs text-slate-500 hover:text-emerald-600 dark:text-slate-400 dark:hover:text-indigo-400 mt-1 transition-colors">
+                            <span>View on PyPI</span>
+                            <svg class="h-3 w-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">Python</span>
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">Django</span>
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">OAuth2</span>
+                    </div>
+
+                    <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                        Created a unified Django auth library compilation linking standard user settings with federated
+                        social platforms (Google, Discord, Steam OpenID).
+                    </p>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+                    <div>
+                        <span class="block text-[10px] uppercase font-bold tracking-wider text-slate-400 dark:text-slate-500">Technical Result</span>
+                        <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400">Standardized Auth Middleware Wrapper</span>
+                    </div>
+                    <a href="#/case-studies/dj-all-auth"
+                       class="inline-flex items-center text-sm font-semibold text-emerald-600 dark:text-emerald-400 hover:underline hover:translate-x-1 transition-all duration-200">
+                        Architecture Specs &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- PROJECT 6: Fr-easy -->
+            <div class="project-card flex flex-col justify-between bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800/80 rounded-2xl p-6 hover:border-indigo-500/50 hover:shadow-xl hover:shadow-indigo-500/5 dark:hover:border-indigo-500/40 transition-all duration-300 group"
+                 data-category="company"
+                 data-tech="laravel, php, mysql, aws bucket, ec2 hosting, docker, ubuntu, pubnub, twillio, webhook, rest api">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20">
+              NGO & Fundraising Client
+            </span>
+                        <span class="flex items-center text-xs text-emerald-600 dark:text-emerald-400 font-medium">
+              <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse mr-2"></span> Real-time Hub
+            </span>
+                    </div>
+
+                    <div class="mb-3">
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                            Fr-easy: Hierarchical Multi-Tenant Fundraising Pipeline
+                        </h3>
+                        <span class="inline-flex items-center text-xs text-slate-400 mt-1 cursor-not-allowed">
+              <svg class="h-3 w-3 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+              </svg> Corporate Restricted
+            </span>
+                    </div>
+
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">Laravel / PHP</span>
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">MySQL</span>
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">PubNub / Twilio</span>
+                    </div>
+
+                    <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                        Architected the database schemas and routing checks for 11 dynamic hierarchical roles, syncing
+                        volunteer communications across major regional offices.
+                    </p>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+                    <div>
+                        <span class="block text-[10px] uppercase font-bold tracking-wider text-slate-400 dark:text-slate-500">Business Result</span>
+                        <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400">Unified Multi-City Data Security RBAC</span>
+                    </div>
+                    <a href="#/case-studies/freasy-pipeline"
+                       class="inline-flex items-center text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:underline hover:translate-x-1 transition-all duration-200">
+                        Architecture Specs &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- PROJECT 7: Kalaty -->
+            <div class="project-card flex flex-col justify-between bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800/80 rounded-2xl p-6 hover:border-indigo-500/50 hover:shadow-xl hover:shadow-indigo-500/5 dark:hover:border-indigo-500/40 transition-all duration-300 group"
+                 data-category="company" data-tech="yii2, php, mysql, ubuntu">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20">
+              Legacy Migration
+            </span>
+                        <span class="flex items-center text-xs text-indigo-600 dark:text-indigo-400 font-medium">
+              <svg class="h-4 w-4 mr-1 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                      d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.21 15H19"/>
+              </svg> PHP5 Upgrade
+            </span>
+                    </div>
+
+                    <div class="mb-3">
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                            Kalaty: Legacy Enterprise Rug E-Commerce Migration
+                        </h3>
+                        <a href="https://kalaty.com/" target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center text-xs text-slate-500 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400 mt-1 transition-colors">
+                            <span>View Production Site</span>
+                            <svg class="h-3 w-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">Yii2 / PHP</span>
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">MySQL</span>
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">Legacy PHP5</span>
+                    </div>
+
+                    <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                        Rebuilt and migrated a complex, database-heavy legacy PHP5 custom site into a secure, modern
+                        Yii2 application for Kalaty. Restructured relational schemas.
+                    </p>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+                    <div>
+                        <span class="block text-[10px] uppercase font-bold tracking-wider text-slate-400 dark:text-slate-500">Business Result</span>
+                        <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400">80% Core Load Time Improvement</span>
+                    </div>
+                    <a href="#/case-studies/kalaty-migration"
+                       class="inline-flex items-center text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:underline hover:translate-x-1 transition-all duration-200">
+                        Architecture Specs &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- PROJECT 8: Justify -->
+            <div class="project-card flex flex-col justify-between bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800/80 rounded-2xl p-6 hover:border-emerald-500/50 hover:shadow-xl hover:shadow-emerald-500/5 dark:hover:border-emerald-500/40 transition-all duration-300 group"
+                 data-category="personal" data-tech="javascript, npm package, library, jquery package, django, laravel">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
+              Developer Utility
+            </span>
+                        <span class="flex items-center text-xs text-emerald-600 dark:text-emerald-400 font-medium">
+              <svg class="h-4 w-4 mr-1 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                      d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+              </svg> Client-Server Sync
+            </span>
+                    </div>
+
+                    <div class="mb-3">
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                            Justify: Unified Backend Validation Form Mapper
+                        </h3>
+                        <a href="https://github.com/deviserops/justify" target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center text-xs text-slate-500 hover:text-emerald-600 dark:text-slate-400 dark:hover:text-indigo-400 mt-1 transition-colors">
+                            <span>View Repository</span>
+                            <svg class="h-3 w-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">JavaScript</span>
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">npm Library</span>
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">jQuery Hook</span>
+                    </div>
+
+                    <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                        Developed an agnostic validation layer mapping client form responses directly to native server
+                        constraints, preventing dual-writing validation code schemas.
+                    </p>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+                    <div>
+                        <span class="block text-[10px] uppercase font-bold tracking-wider text-slate-400 dark:text-slate-500">Technical Result</span>
+                        <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400">Eliminates Custom Client JS Rules</span>
+                    </div>
+                    <a href="#/case-studies/justify-validator"
+                       class="inline-flex items-center text-sm font-semibold text-emerald-600 dark:text-emerald-400 hover:underline hover:translate-x-1 transition-all duration-200">
+                        Architecture Specs &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- PROJECT 9: Hmikolkata -->
+            <div class="project-card flex flex-col justify-between bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800/80 rounded-2xl p-6 hover:border-indigo-500/50 hover:shadow-xl hover:shadow-indigo-500/5 dark:hover:border-indigo-500/40 transition-all duration-300 group"
+                 data-category="company"
+                 data-tech="codeigniter, php, mysql, ec2 hosting, docker, ubuntu, ccavenue payment, webhook, rest api">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20">
+              Ongraph Technologies • Institution
+            </span>
+                        <span class="flex items-center text-xs text-indigo-600 dark:text-indigo-400 font-medium">
+              <span class="h-2 w-2 rounded-full bg-indigo-400 mr-2"></span> Gov Approved Hub
+            </span>
+                    </div>
+
+                    <div class="mb-3">
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                            Post Sea Maritime Course Registration Backend
+                        </h3>
+                        <span class="inline-flex items-center text-xs text-slate-400 mt-1 cursor-not-allowed">
+              <svg class="h-3 w-3 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+              </svg> System Internal
+            </span>
+                    </div>
+
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">CodeIgniter / PHP</span>
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">MySQL</span>
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">CCAvenue PG</span>
+                    </div>
+
+                    <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                        Rebuilt the registration queues for a maritime training institute training center. Added
+                        checksum validation with CCAvenue Payment Gateways.
+                    </p>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+                    <div>
+                        <span class="block text-[10px] uppercase font-bold tracking-wider text-slate-400 dark:text-slate-500">Business Result</span>
+                        <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400">Stable CCAvenue Callback Engine</span>
+                    </div>
+                    <a href="#/case-studies/maritime-backend"
+                       class="inline-flex items-center text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:underline hover:translate-x-1 transition-all duration-200">
+                        Architecture Specs &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- PROJECT 10: Notify -->
+            <div class="project-card flex flex-col justify-between bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800/80 rounded-2xl p-6 hover:border-emerald-500/50 hover:shadow-xl hover:shadow-emerald-500/5 dark:hover:border-emerald-500/40 transition-all duration-300 group"
+                 data-category="personal" data-tech="javascript, npm package, library">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
+              Developer Package
+            </span>
+                        <span class="flex items-center text-xs text-emerald-600 dark:text-emerald-400 font-medium">
+              <svg class="h-4 w-4 mr-1 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+              </svg> npm Download
+            </span>
+                    </div>
+
+                    <div class="mb-3">
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                            @deviser/notify: Lightweight Popup Engine
+                        </h3>
+                        <a href="https://www.npmjs.com/package/@deviser/notify" target="_blank"
+                           rel="noopener noreferrer"
+                           class="inline-flex items-center text-xs text-slate-500 hover:text-emerald-600 dark:text-slate-400 dark:hover:text-indigo-400 mt-1 transition-colors">
+                            <span>View on npm</span>
+                            <svg class="h-3 w-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">JavaScript</span>
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">npm Library</span>
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">Vanilla JS</span>
+                    </div>
+
+                    <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                        Built a vanilla JS notifications wrapper to display transient alerts, warnings, and messages
+                        with zero dependencies and a lightweight 2.5KB footprint.
+                    </p>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+                    <div>
+                        <span class="block text-[10px] uppercase font-bold tracking-wider text-slate-400 dark:text-slate-500">Technical Result</span>
+                        <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400">Zero Dependency Client Alert Engine</span>
+                    </div>
+                    <a href="#/case-studies/notify-js"
+                       class="inline-flex items-center text-sm font-semibold text-emerald-600 dark:text-emerald-400 hover:underline hover:translate-x-1 transition-all duration-200">
+                        Architecture Specs &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- PROJECT 11: Synkn (Personal Hub) -->
+            <div class="project-card flex flex-col justify-between bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800/80 rounded-2xl p-6 hover:border-emerald-500/50 hover:shadow-xl hover:shadow-emerald-500/5 dark:hover:border-emerald-500/40 transition-all duration-300 group"
+                 data-category="personal" data-tech="11ty, node, npm, tailwind">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
+              Personal Site
+            </span>
+                        <span class="flex items-center text-xs text-emerald-600 dark:text-emerald-400 font-medium">
+              <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse mr-2"></span> Static Build
+            </span>
+                    </div>
+
+                    <div class="mb-3">
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                            synkn.app: High-Speed JAMstack Portal
+                        </h3>
+                        <a href="https://synkn.app" target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center text-xs text-slate-500 hover:text-emerald-600 dark:text-slate-400 dark:hover:text-indigo-400 mt-1 transition-colors">
+                            <span>Visit synkn.app</span>
+                            <svg class="h-3 w-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">11ty</span>
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">Node.js</span>
+                        <span class="tech-badge px-2 py-0.5 bg-slate-100 dark:bg-slate-950 rounded text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">Tailwind</span>
+                    </div>
+
+                    <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                        Designed a custom, high-speed JAMstack static-generated portal using Eleventy (11ty) layout
+                        nodes. Renders with absolute minimal CSS weight.
+                    </p>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+                    <div>
+                        <span class="block text-[10px] uppercase font-bold tracking-wider text-slate-400 dark:text-slate-500">Technical Result</span>
+                        <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400">Perfect 100/100 Lighthouse Performance Score</span>
+                    </div>
+                    <a href="#/case-studies/synkn-hub"
+                       class="inline-flex items-center text-sm font-semibold text-emerald-600 dark:text-emerald-400 hover:underline hover:translate-x-1 transition-all duration-200">
+                        Architecture Specs &rarr;
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Outbound Lead Generation Block -->
+        <div class="mt-16 bg-gradient-to-br from-indigo-600 to-violet-700 rounded-3xl p-8 sm:p-12 text-center text-white relative overflow-hidden shadow-2xl">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.1),transparent)] pointer-events-none"></div>
+
+            <div class="relative z-10 max-w-2xl mx-auto">
+                <h3 class="text-2xl font-extrabold sm:text-3xl">Ready to secure and optimize your backend systems?</h3>
+                <p class="mt-4 text-indigo-100">
+                    I consult directly with product owners to solve database scaling limits, implement secure payment
+                    webhooks, and streamline internal APIs.
+                </p>
+                <div class="mt-8 flex flex-wrap justify-center gap-4">
+                    <a href="/contact-us"
+                       class="px-6 py-3 bg-white text-indigo-600 font-bold rounded-xl shadow-lg hover:bg-indigo-50 transition-all duration-200">
+                        Book System Audit
+                    </a>
+                    <a href="/contact-us"
+                       class="px-6 py-3 border border-white/40 text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-200">
+                        Get Tech Consult
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ========================================================================= -->
+<!-- DYNAMIC CASE STUDY DETAIL VIEW (Populated via JS Router)                 -->
+<!-- ========================================================================= -->
+<section id="case-study-view" class="hidden bg-slate-50 dark:bg-slate-950 py-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl mx-auto">
+
+        <!-- Back button and Navigation Context -->
+        <div class="mb-8">
+            <a href="#/"
+               class="inline-flex items-center text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:underline">
+                <svg class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                </svg>
+                Back to Architecture Portfolio
+            </a>
+        </div>
+
+        <!-- Dynamic Destination Area -->
+        <div id="case-study-content">
+            <!-- Rendered Case Study Injector Point -->
+        </div>
+
+    </div>
+</section>
+<!-- END OF PORTABLE CASE STUDIES INDEX SECTION -->
+    </main>
+
+    <footer class="bg-gray-800 text-gray-400 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+            <!-- Logo/Branding -->
+            <div>
+                <a href="/" class="relative inline-block font-extrabold text-white relative inline-block">
+                    <img src="/assets/images/logo.png" class="h-5" alt="Synkn"/>
+                    <span class="absolute -top-2.5 -right-4 font-bold text-gray-500">™</span>
+                </a>
+                <p class="text-sm mt-2 text-slate-500">Innovative Digital Tools &amp; Custom Software Solutions</p>
+            </div>
+
+            <!-- Product Links -->
+            <div>
+                <h4 class="text-slate-400 font-semibold mb-3">Availablity</h4>
+                <ul class="space-y-2 text-sm text-slate-500">
+                    <li class="flex items-center">
+                        <span class="h-2 w-2 rounded-full bg-emerald-400 mr-2"></span> Accepting Project Audits
+                    </li>
+                    <li>
+                        Direct Consultation
+                    </li>
+                    <li>
+                        Security Engineering
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Static Pages / Legal -->
+            <div>
+                <h4 class="text-slate-400 font-semibold mb-3">Legal & Info</h4>
+                <ul class="space-y-2 text-sm text-slate-500">
+                    <li><a href="/battery-alarm/privacy-policy" class="hover:text-teal-600 transition duration-150">Battery Privacy Policy</a></li>
+                    <li><a href="/focus-desk/privacy-policy" class="hover:text-teal-600 transition duration-150">FocusDesk Privacy Policy</a></li>
+                    <li><a href="/slab-stack/privacy-policy" class="hover:text-teal-600 transition duration-150">SlabStack Privacy Policy</a></li>
+
+                </ul>
+            </div>
+
+            <!-- Get Started -->
+            <div>
+                <h4 class="text-slate-400 font-semibold mb-3">Quick Links</h4>
+                <ul class="space-y-2 text-sm text-slate-500">
+                    <li><a href="/contact-us" class="hover:text-teal-600 transition duration-150">Contact Us</a></li>
+                    <li><a href="/#products" class="hover:text-teal-600 transition duration-150">Products</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Copyright and Social Icons (Placeholder) -->
+        <div class="border-t border-gray-700 pt-8 flex flex-col sm:flex-row items-center justify-between text-sm">
+            <p>&copy; <span id="current-year"></span> Synkn. System architecture registered. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 sm:mt-0">
+                <a href="/privacy-policy" class="hover:underline">Privacy Policies</a>
+                <a href="/nda-and-confidentiality-policy" class="hover:underline">NDA Agreement Licensing</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            const yearElement = document.getElementById('current-year');
+            if (yearElement) {
+                yearElement.textContent = new Date().getFullYear();
+            }
+        })();
+    </script>
+</footer>
+
+    <!-- Load Tailwind Theme JS -->
+    <script src="/assets/tailwind/theme.js?v=2026"></script>
+
+    <!-- Page Specific JS -->
+    
+        
+            <script type="text/javascript" src="/assets/js/case_study.js?v=2026" defer></script>
+        
+    
+</body>
+</html>

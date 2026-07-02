@@ -52,29 +52,32 @@
   </div>
 </div>
 
-    <header class="w-full bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 shadow-sm">
-    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+    <header class="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/80 backdrop-blur dark:border-slate-900 dark:bg-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
 
-      <div class="flex items-center">
-        <a href="/" class="text-xl font-black tracking-tight text-sky-600 dark:text-sky-400 hover:opacity-90 relative inline-block">
-            <img src="/assets/images/logo.png" class="h-5" alt="Synkn"/>
-            <span class="absolute -top-2.5 -right-4 font-bold text-gray-500">™</span>
-        </a>
-      </div>
+      <!-- Brand Logo -->
+      <a href="/" class="text-xl font-black tracking-tight text-sky-600 dark:text-sky-400 hover:opacity-90 relative inline-block">
+          <img src="/assets/images/logo.png" class="h-5" alt="Synkn"/>
+          <span class="absolute -top-2.5 -right-4 font-bold text-gray-500">™</span>
+      </a>
 
-      <nav class="hidden sm:flex items-center space-x-6 text-sm font-medium text-slate-600 dark:text-slate-300">
-        <a href="/#products" class="hover:text-primary-teal transition duration-150">Products</a>
-        <a href="/#contact" class="hover:text-primary-teal transition duration-150">Contact</a>
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+        <a href="/case-study" class="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">Case Studies</a>
+        <a href="/#products" class="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">Products</a>
+        <a href="/#contact" class="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">Contact</a>
       </nav>
 
-      <div class="flex items-center">
+      <!-- Utilities & Mode Toggler -->
+      <div class="flex items-center space-x-4">
+        <!-- Theme Switcher Button -->
         <button id="theme-toggle" class="cursor-pointer p-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-700 text-sm">
           <span class="inline dark:hidden">🌙 Mode</span>
           <span class="hidden dark:inline">☀️ Mode</span>
         </button>
       </div>
     </div>
-</header>
+  </header>
 
     <main class="w-full">
         
@@ -569,7 +572,7 @@
     </main>
 
     <footer class="bg-gray-800 text-gray-400 py-10">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
             <!-- Logo/Branding -->
             <div>
@@ -577,47 +580,54 @@
                     <img src="/assets/images/logo.png" class="h-5" alt="Synkn"/>
                     <span class="absolute -top-2.5 -right-4 font-bold text-gray-500">™</span>
                 </a>
-                <p class="text-sm mt-2 text-gray-300">Innovative Digital Tools &amp; Custom Software Solutions</p>
+                <p class="text-sm mt-2 text-slate-500">Innovative Digital Tools &amp; Custom Software Solutions</p>
             </div>
 
             <!-- Product Links -->
             <div>
-                <h4 class="text-white font-semibold mb-3">Products</h4>
-                <ul class="space-y-2 text-sm">
-                    <!-- Footer links now use hover:text-primary-teal -->
-                    <li><a href="/battery-alarm" class="hover:text-primary-teal transition duration-150">Battery Alarm</a></li>
-                    <li><a href="/focus-desk" class="hover:text-primary-teal transition duration-150">FocusDesk</a></li>
-                    <!-- <li><a href="/glow-sync" class="hover:text-primary-teal transition duration-150">GlowSync</a></li> -->
-                    <li><a href="/sync-zone" class="hover:text-primary-teal transition duration-150">SyncZone</a></li>
-                    <li><a href="/slab-stack" class="hover:text-primary-teal transition duration-150">SlabStack</a></li>
+                <h4 class="text-slate-400 font-semibold mb-3">Availablity</h4>
+                <ul class="space-y-2 text-sm text-slate-500">
+                    <li class="flex items-center">
+                        <span class="h-2 w-2 rounded-full bg-emerald-400 mr-2"></span> Accepting Project Audits
+                    </li>
+                    <li>
+                        Direct Consultation
+                    </li>
+                    <li>
+                        Security Engineering
+                    </li>
                 </ul>
             </div>
 
             <!-- Static Pages / Legal -->
             <div>
-                <h4 class="text-white font-semibold mb-3">Legal & Info</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="/battery-alarm/privacy-policy" class="hover:text-primary-teal transition duration-150">Battery Privacy Policy</a></li>
-                    <li><a href="/focus-desk/privacy-policy" class="hover:text-primary-teal transition duration-150">FocusDesk Privacy Policy</a></li>
-                    <li><a href="/slab-stack/privacy-policy" class="hover:text-primary-teal transition duration-150">SlabStack Privacy Policy</a></li>
+                <h4 class="text-slate-400 font-semibold mb-3">Legal & Info</h4>
+                <ul class="space-y-2 text-sm text-slate-500">
+                    <li><a href="/battery-alarm/privacy-policy" class="hover:text-teal-600 transition duration-150">Battery Privacy Policy</a></li>
+                    <li><a href="/focus-desk/privacy-policy" class="hover:text-teal-600 transition duration-150">FocusDesk Privacy Policy</a></li>
+                    <li><a href="/slab-stack/privacy-policy" class="hover:text-teal-600 transition duration-150">SlabStack Privacy Policy</a></li>
 
                 </ul>
             </div>
 
             <!-- Get Started -->
             <div>
-                <h4 class="text-white font-semibold mb-3">Quick Links</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="/contact-us" class="hover:text-primary-teal transition duration-150">Contact Us</a></li>
-                    <li><a href="/#products" class="hover:text-primary-teal transition duration-150">Products</a></li>
+                <h4 class="text-slate-400 font-semibold mb-3">Quick Links</h4>
+                <ul class="space-y-2 text-sm text-slate-500">
+                    <li><a href="/contact-us" class="hover:text-teal-600 transition duration-150">Contact Us</a></li>
+                    <li><a href="/#products" class="hover:text-teal-600 transition duration-150">Products</a></li>
                 </ul>
             </div>
 
         </div>
 
         <!-- Copyright and Social Icons (Placeholder) -->
-        <div class="pt-8 border-t border-gray-700 text-center text-sm">
-            &copy; <span id="current-year"></span> Synkn. All rights reserved.
+        <div class="border-t border-gray-700 pt-8 flex flex-col sm:flex-row items-center justify-between text-sm">
+            <p>&copy; <span id="current-year"></span> Synkn. System architecture registered. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 sm:mt-0">
+                <a href="/privacy-policy" class="hover:underline">Privacy Policies</a>
+                <a href="/nda-and-confidentiality-policy" class="hover:underline">NDA Agreement Licensing</a>
+            </div>
         </div>
     </div>
 
