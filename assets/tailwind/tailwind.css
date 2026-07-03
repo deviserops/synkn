@@ -1,7 +1,0 @@
-@import "tailwindcss";
-
-/* Tell Tailwind to scan ALL common Eleventy template types inside src/ */
-@source "../../src/**/*.{md,html,liquid,njk,11ty.js}";
-
-/* Manual dark mode variant override selector */
-@variant dark (&:where(.dark, .dark *));
