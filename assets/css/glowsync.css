@@ -1,21 +1,42 @@
-/* Unified style for all feature icons (Teal) */
+/* Gradient Text Animation */
+.gradient-text {
+    background: linear-gradient(135deg, #0d9488 0%, #06b6d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Glow effects */
+.glow-effect {
+    box-shadow: 0 0 40px -10px rgba(13, 148, 136, 0.3);
+}
+
+/* Feature icon highlight styling */
 .feature-icon-primary {
-    background: rgba(20, 184, 166, 0.1); /* Teal 500 w/ opacity */
-    color: #14B8A6; /* Primary Teal 500 */
+    background: rgba(13, 148, 136, 0.1);
+    color: #0d9488;
 }
 
+.dark .feature-icon-primary {
+    background: rgba(20, 184, 166, 0.15);
+    color: #2dd4bf;
+}
+
+/* Star evaluation markers */
 .star-filled {
-    color: #F59E0B;
+    color: #f59e0b; /* Amber-500 */
 }
 
-/* Amber 500 for stars */
 .star-empty {
-    color: #D1D5DB;
+    color: #cbd5e1; /* Slate-300 */
 }
 
-/* Gray 300 for empty stars */
+.dark .star-empty {
+    color: #475569; /* Slate-600 */
+}
 
-/* Ensures the slider transition is applied */
+/* Slider hardware acceleration variables */
 #testimonial-slider {
-    transition: transform 500ms ease-in-out;
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
 }

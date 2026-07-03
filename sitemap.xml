@@ -19,6 +19,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://synkn.app/glow-sync/</loc>
+    <lastmod>2026-06-13T11:21:27.941Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://synkn.app/contact-us/</loc>
     <lastmod>2026-06-13T11:21:27.943Z</lastmod>
     <changefreq>monthly</changefreq>
@@ -69,6 +75,18 @@
   <url>
     <loc>https://synkn.app/privacy-policy/</loc>
     <lastmod>2026-07-02T09:05:55.401Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://synkn.app/glow-sync/privacy-policy/</loc>
+    <lastmod>2026-07-03T12:30:28.100Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://synkn.app/glow-sync/terms-of-use/</loc>
+    <lastmod>2026-07-03T12:44:22.272Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

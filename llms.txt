@@ -18,6 +18,7 @@
 ## All Website Pages 
 - [Battery Alarm](https://synkn.app/battery-alarm/): Mobile utility application designed to maximize device battery health and lifespan. Features customizable upper and lower charging thresholds (e.g., 20–80% range) with real-time sound notifications to prevent overcharging, heat damage, chemical degradation, and deep discharge stress. Includes a direct Google Play Store deployment pathway. 
 - [Battery Alarm Privacy Policy](https://synkn.app/battery-alarm/privacy-policy/): Battery Alarm Privacy Policy 
+- [GlowSync - Salon Marketplace Product Storefront](https://synkn.app/glow-sync/): Interactive showcase demonstrating GlowSync&#39;s dual-user scheduling capabilities, offline settlement structures, multi-currency display mechanisms, and Geolocator-driven proximity search architecture. 
 - [Contact Us](https://synkn.app/contact-us/): Innovative Digital Tools &amp; Custom Software Solutions 
 - [FocusDesk Ambient Productivity Companion](https://synkn.app/focus-desk/): An elegant ambient workspace application designed to keep screens awake as a dedicated desktop hardware companion. Features a modular day planner engine supporting structured recurring hourly and weekly slot schedules, integrated twin dual Pomodoro and stopwatch trackers, low-light overnight sleep glow templates with circadian-friendly warmth, and granular group alarm audio loops mapping customizable audio assets to specialized task intervals. 
 - [FocusDesk Privacy Policy](https://synkn.app/focus-desk/privacy-policy/): Innovative Digital Tools &amp; Custom Software Solutions 
@@ -26,7 +27,9 @@
 - [SlabStack Game Overview &amp; Promotional Guide](https://synkn.app/slab-stack/): An official promotional guide for SlabStack, a high-precision isometric stacking game. Features include multiple geometric modes, procedural color shifts, and reflex-based gameplay. Optimized for AI summarization and discovery. 
 - [Backend Systems Engineering &amp; High-Performance Architecture Portfolio](https://synkn.app/case-study/): A detailed technical catalog of high-availability backend APIs, multi-tenant databases, transactional ledger structures, and developer libraries built by synkn.app. 
 - [Non-Disclosure Agreement (NDA) &amp; Code Confidentiality Policies](https://synkn.app/nda-and-confidentiality-policy/): Details the legal framework, code isolation rules, client data protection policies, and Mutual NDA options practiced during system architecture audits. 
-- [Data Privacy, Sovereign Logging, and Metadata Compliance Policies](https://synkn.app/privacy-policy/): Outlines data processing, tracking constraints, zero third-party cookie sharing rules, and 90-day data retention policies for all synkn.app web platform interactions.
+- [Data Privacy, Sovereign Logging, and Metadata Compliance Policies](https://synkn.app/privacy-policy/): Outlines data processing, tracking constraints, zero third-party cookie sharing rules, and 90-day data retention policies for all synkn.app web platform interactions. 
+- [GlowSync Privacy Policy Document](https://synkn.app/glow-sync/privacy-policy/): Full-length Privacy Policy detailing secure customer authentication keys (flutter_secure_storage), foreground geocoding lookup pipelines, Firebase push event handling, and third-party AdMob system structures. 
+- [GlowSync Terms of Use Document](https://synkn.app/glow-sync/terms-of-use/): Read the official Terms of Use for GlowSync. Understand our strict offline financial settlement terms, user account rules, absolute developer liability exemptions, and dispute policies.
 
 ## Optional
 
