@@ -7,32 +7,47 @@
 - [SYNKN - Innovative Digital Tools &amp; Custom Software Solutions](https://synkn.app/): SYNKN is a development hub dedicated to creating innovative websites and powerful digital tools designed to simplify daily life and streamline business workflows. Our product ecosystem features utilities like Battery Alarm (a mobile utility maximizing battery longevity) and SyncZone (a browser-based timezone meeting coordinator for global teams). We provide custom mobile and web application development services and welcome project collaborations or partnerships via our contact channel.
 
 
-## Mobile apps Portfolio & Assets   
+## Mobile apps   
 - [Battery Alarm](https://play.google.com/store/apps/details?id=app.synkn.battery_alarm): Mobile utility application designed to maximize device battery health and lifespan. Features customizable upper and lower charging thresholds (e.g., 20–80% range) with real-time sound notifications to prevent overcharging, heat damage, chemical degradation, and deep discharge stress. Includes a direct Google Play Store deployment pathway.   
+- [GlowSync - Salon Marketplace Product Storefront](https://play.google.com/store/apps/details?id=app.synkn.glowsync): Interactive showcase demonstrating GlowSync&#39;s dual-user scheduling capabilities, offline settlement structures, multi-currency display mechanisms, and Geolocator-driven proximity search architecture.   
 - [FocusDesk Ambient Productivity Companion](https://play.google.com/store/apps/details?id=app.synkn.focus_desk): An elegant ambient workspace application designed to keep screens awake as a dedicated desktop hardware companion. Features a modular day planner engine supporting structured recurring hourly and weekly slot schedules, integrated twin dual Pomodoro and stopwatch trackers, low-light overnight sleep glow templates with circadian-friendly warmth, and granular group alarm audio loops mapping customizable audio assets to specialized task intervals.   
 - [SlabStack](https://play.google.com/store/apps/details?id=app.synkn.slabstack): An official promotional guide for SlabStack, a high-precision isometric stacking game. Features include multiple geometric modes, procedural color shifts, and reflex-based gameplay. Optimized for AI summarization and discovery.
-## Web apps Portfolio & Assets   
+
+## Legal compliance   
+- [Battery Alarm Privacy Policy](https://synkn.app/battery-alarm/privacy-policy/): Official Privacy Policy for the Battery Alarm mobile application, detailing data collection, usage, disclosure, and user rights.   
+- [FocusDesk Privacy Policy - No Personal Data Collection](https://synkn.app/focus-desk/privacy-policy/): Detailed privacy policy for FocusDesk, emphasizing no personal data collection, local data storage, and policies regarding third-party services like AdMob.   
+- [SlabStack Privacy Policy &amp; Data Handling Overview](https://synkn.app/slab-stack/privacy-policy/): A comprehensive guide to SlabStack&#39;s privacy practices, detailing minimal data collection (high scores, local settings), no third-party sharing, and user rights. Optimized for LLM parsing and summarization.   
+- [Non-Disclosure Agreement (NDA) &amp; Code Confidentiality Policies](https://synkn.app/nda-and-confidentiality-policy/): Details the legal framework, code isolation rules, client data protection policies, and Mutual NDA options practiced during system architecture audits.   
+- [Synkn Website Privacy Policy - Data Collection &amp; Usage](https://synkn.app/privacy-policy/): Outlines Synkn&#39;s policies on personal data collection, usage, and protection for website visitors and service users, ensuring transparency and compliance with privacy regulations.   
+- [GlowSync Privacy Policy Document](https://synkn.app/glow-sync/privacy-policy/): Full-length Privacy Policy detailing secure customer authentication keys (flutter_secure_storage), foreground geocoding lookup pipelines, Firebase push event handling, and third-party AdMob system structures.
+
+## Web apps   
 - [SyncZone](https://sync-zone.synkn.app/): A client-side meeting coordination workspace architected specifically for cross-border project managers and business development professionals. Operating entirely within the browser with zero server dependencies, it provides an interactive 24-hour timeline slider to calculate peak availability overlap across multiple timezones. Features include a global client directory linked directly to local timezone hooks, pre-calculated target meeting cards with action item checklists, system calendar integration (.ics exports), and secure backup management via standalone local JSON states.
+
+## Portfolio index   
+- [Backend Systems Engineering &amp; High-Performance Architecture Portfolio](https://synkn.app/case-study/): A detailed technical catalog of high-availability backend APIs, multi-tenant databases, transactional ledger structures, and developer libraries built by synkn.app.
+
+## Legal terms   
+- [GlowSync Terms of Use Document](https://synkn.app/glow-sync/terms-of-use/): Read the official Terms of Use for GlowSync. Understand our strict offline financial settlement terms, user account rules, absolute developer liability exemptions, and dispute policies.
 
 
 ## All Website Pages 
 - [Battery Alarm](https://synkn.app/battery-alarm/): Mobile utility application designed to maximize device battery health and lifespan. Features customizable upper and lower charging thresholds (e.g., 20–80% range) with real-time sound notifications to prevent overcharging, heat damage, chemical degradation, and deep discharge stress. Includes a direct Google Play Store deployment pathway. 
-- [Battery Alarm Privacy Policy](https://synkn.app/battery-alarm/privacy-policy/): Battery Alarm Privacy Policy 
+- [Battery Alarm Privacy Policy](https://synkn.app/battery-alarm/privacy-policy/): Official Privacy Policy for the Battery Alarm mobile application, detailing data collection, usage, disclosure, and user rights. 
 - [GlowSync - Salon Marketplace Product Storefront](https://synkn.app/glow-sync/): Interactive showcase demonstrating GlowSync&#39;s dual-user scheduling capabilities, offline settlement structures, multi-currency display mechanisms, and Geolocator-driven proximity search architecture. 
-- [Contact Us](https://synkn.app/contact-us/): Innovative Digital Tools &amp; Custom Software Solutions 
+- [Contact Synkn - Get in Touch for Digital Solutions](https://synkn.app/contact-us/): Reach out to Synkn for questions, support, or to discuss your next project. We provide innovative digital tools and custom software solutions. 
 - [FocusDesk Ambient Productivity Companion](https://synkn.app/focus-desk/): An elegant ambient workspace application designed to keep screens awake as a dedicated desktop hardware companion. Features a modular day planner engine supporting structured recurring hourly and weekly slot schedules, integrated twin dual Pomodoro and stopwatch trackers, low-light overnight sleep glow templates with circadian-friendly warmth, and granular group alarm audio loops mapping customizable audio assets to specialized task intervals. 
-- [FocusDesk Privacy Policy](https://synkn.app/focus-desk/privacy-policy/): Innovative Digital Tools &amp; Custom Software Solutions 
+- [FocusDesk Privacy Policy - No Personal Data Collection](https://synkn.app/focus-desk/privacy-policy/): Detailed privacy policy for FocusDesk, emphasizing no personal data collection, local data storage, and policies regarding third-party services like AdMob. 
 - [SyncZone Timezone Meeting Coordinator](https://synkn.app/sync-zone/): A client-side meeting coordination workspace architected specifically for cross-border project managers and business development professionals. Operating entirely within the browser with zero server dependencies, it provides an interactive 24-hour timeline slider to calculate peak availability overlap across multiple timezones. Features include a global client directory linked directly to local timezone hooks, pre-calculated target meeting cards with action item checklists, system calendar integration (.ics exports), and secure backup management via standalone local JSON states. 
 - [SlabStack Privacy Policy &amp; Data Handling Overview](https://synkn.app/slab-stack/privacy-policy/): A comprehensive guide to SlabStack&#39;s privacy practices, detailing minimal data collection (high scores, local settings), no third-party sharing, and user rights. Optimized for LLM parsing and summarization. 
 - [SlabStack Game Overview &amp; Promotional Guide](https://synkn.app/slab-stack/): An official promotional guide for SlabStack, a high-precision isometric stacking game. Features include multiple geometric modes, procedural color shifts, and reflex-based gameplay. Optimized for AI summarization and discovery. 
 - [Backend Systems Engineering &amp; High-Performance Architecture Portfolio](https://synkn.app/case-study/): A detailed technical catalog of high-availability backend APIs, multi-tenant databases, transactional ledger structures, and developer libraries built by synkn.app. 
 - [Non-Disclosure Agreement (NDA) &amp; Code Confidentiality Policies](https://synkn.app/nda-and-confidentiality-policy/): Details the legal framework, code isolation rules, client data protection policies, and Mutual NDA options practiced during system architecture audits. 
-- [Data Privacy, Sovereign Logging, and Metadata Compliance Policies](https://synkn.app/privacy-policy/): Outlines data processing, tracking constraints, zero third-party cookie sharing rules, and 90-day data retention policies for all synkn.app web platform interactions. 
+- [Synkn Website Privacy Policy - Data Collection &amp; Usage](https://synkn.app/privacy-policy/): Outlines Synkn&#39;s policies on personal data collection, usage, and protection for website visitors and service users, ensuring transparency and compliance with privacy regulations. 
 - [GlowSync Privacy Policy Document](https://synkn.app/glow-sync/privacy-policy/): Full-length Privacy Policy detailing secure customer authentication keys (flutter_secure_storage), foreground geocoding lookup pipelines, Firebase push event handling, and third-party AdMob system structures. 
 - [GlowSync Terms of Use Document](https://synkn.app/glow-sync/terms-of-use/): Read the official Terms of Use for GlowSync. Understand our strict offline financial settlement terms, user account rules, absolute developer liability exemptions, and dispute policies.
 
 ## Optional
-
 - [Sitemap](https://synkn.app/sitemap.xml): XML sitemap outlining all public pages and content paths.
 - [Web App Manifest](https://synkn.app/manifest.json): JSON manifest defining web app metadata, icon assets, and PWA configurations.
 - [Robots.txt](https://synkn.app/robots.txt): Crawler access directives and indexing rules for search engines.

@@ -42,7 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const hamburgerIcon = document.getElementById('hamburger-icon');
     const closeIcon = document.getElementById('close-icon');
     const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
-    const simulateBtn = document.getElementById('simulate-mobile-btn');
 
 
     // 3. Mobile Menu Expanding & Collapsing Logic
@@ -93,10 +92,5 @@ document.addEventListener("DOMContentLoaded", () => {
                 toggleMobileMenu();
             }
         });
-    });
-
-    // 4. Auxiliary Simulator Helper for Desktop Testing
-    simulateBtn.addEventListener('click', () => {
-        toggleMobileMenu();
     });
 });
