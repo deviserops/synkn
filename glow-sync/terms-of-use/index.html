@@ -139,7 +139,7 @@
         <!-- Document Header -->
         <header class="pb-4 border-b border-teal-200">
             <h1 class="text-4xl font-extrabold text-teal-700 mb-2">Terms of Use</h1>
-            <p class="text-sm text-gray-500 font-medium">Last updated: July 10, 2026</p>
+            <p class="text-sm text-gray-500 font-medium">Last updated: August 21, 2026</p>
         </header>
 
         <!-- Introductory Statement -->
@@ -177,25 +177,44 @@
             <h2 class="text-2xl font-bold text-slate-800 pt-4 border-t border-slate-100">
                 2. Scope of the GlowSync Marketplace</h2>
             <p class="text-slate-600 text-sm leading-relaxed">
-                GlowSync functions strictly as a decentralized intermediary connector, matching
+                GlowSync functions as a decentralized intermediary connector, matching
                 <strong>Customers</strong> who wish to find beauty services with independent local business entities
-                known as <strong>Providers</strong> or <strong>Salons</strong>. We do not operate, control, or manage
-                any physical salons listed on the platform.
+                known as <strong>Providers</strong> or <strong>Salons</strong>.
             </p>
-            <div class="p-4 rounded-xl border border-amber-200 bg-amber-50/30 space-y-2">
-                <h3 class="text-base font-bold text-amber-800">🚨 Critical Offline Financial Settlement Terms</h3>
+
+            <!-- SaaS/Subscription Section for Providers -->
+            <div class="p-4 rounded-xl border border-teal-200 bg-teal-50/30 space-y-2 mb-4">
+                <h3 class="text-base font-bold text-teal-800">💼 SaaS Subscription Model for Providers</h3>
+                <p class="text-xs text-slate-700 leading-relaxed">
+                    While the application is free for Customers to browse, <strong>Providers</strong> access listing and
+                    management tools via a paid SaaS subscription model.
+                </p>
                 <ul class="list-disc list-inside space-y-1.5 text-xs text-slate-700 leading-relaxed">
-                    <li><strong>No In-App Invoicing:</strong> GlowSync does not collect, process, or charge financial
-                        cards, international payment authorizations, or subscription registration fees from platform
-                        customers. It is 100% free to download.
+                    <li><strong>In-App Purchases:</strong> Subscriptions are processed securely via the Google Play
+                        Billing system.
                     </li>
-                    <li><strong>Indicative Pricing Only:</strong> Prices and service catalogs shown in the app are
-                        estimations provided directly by Salon Owners. Actual pricing plans and currency conversion
-                        variances may differ inside the salon premises.
+                    <li><strong>Auto-Renewal:</strong> Subscriptions auto-renew at the end of each billing period. You
+                        can manage or cancel your subscription at any time through your Google Play Store account
+                        settings.
                     </li>
-                    <li><strong>Physical Payments:</strong> All compensation, slot bookings, regional taxes, tips, or
-                        fees must be completed <strong>directly and physically</strong> at the salon location upon
-                        arrival. We are not a payment collection agent, merchant of record, or escrow service.
+                    <li><strong>Platform Access:</strong> Payment grants access to the platform's business tools; it is
+                        not a guarantee of customer bookings or lead generation.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="p-4 rounded-xl border border-amber-200 bg-amber-50/30 space-y-2">
+                <h3 class="text-base font-bold text-amber-800">🚨 Offline Financial Settlement for Services</h3>
+                <ul class="list-disc list-inside space-y-1.5 text-xs text-slate-700 leading-relaxed">
+                    <li><strong>No In-App Payment for Beauty Services:</strong> GlowSync does not collect or process
+                        payments for the actual beauty services (e.g., haircuts, styling) rendered by Providers.
+                    </li>
+                    <li><strong>Indicative Pricing Only:</strong> Prices shown in the app are estimations provided
+                        directly by Salon Owners. Actual pricing may differ at the physical location.
+                    </li>
+                    <li><strong>Physical Payments:</strong> All compensation for beauty services must be completed
+                        <strong>directly and physically</strong> at the salon location. We are not an escrow service for
+                        customer-to-provider transactions.
                     </li>
                 </ul>
             </div>
@@ -209,18 +228,17 @@
                 To schedule or post bookings, you must create an active account profile. You agree to:
             </p>
             <ul class="space-y-3 pl-5 list-disc text-slate-600 text-sm leading-relaxed">
-                <li><strong>Accuracy of Profiles:</strong> Provide a valid name, active mobile number with proper
-                    international country codes, and contact email. Providers must register verifiable coordinates,
-                    precise operating hours, and genuine physical operational storefront addresses.
+                <li><strong>Accuracy of Profiles:</strong> Provide a valid name, active mobile number, and contact
+                    email. Providers must register verifiable coordinates and genuine physical operational storefront
+                    addresses.
                 </li>
                 <li><strong>Account Security:</strong> Secure your account parameters. Synkn utilizes local system
                     secure data maps (such as <code>flutter_secure_storage</code>) to save tokens locally on your
-                    device, but you are completely responsible for any manual activity or scheduling requests generated
-                    from your phone.
+                    device, but you are responsible for any activity generated from your device.
                 </li>
                 <li><strong>Prohibited Actions:</strong> You will not generate fake appointments, script spam bookings,
-                    list false geographical coordinates, scrape app content, reverse-engineer our binaries, or
-                    manipulate device geolocation frameworks (such as <code>geolocator</code> or <code>geocoding</code>
+                    list false geographical coordinates, scrape app content, or manipulate device geolocation frameworks
+                    (such as <code>geolocator</code> or <code>geocoding</code>
                     APIs).
                 </li>
             </ul>
@@ -234,15 +252,12 @@
                 To compute distances globally, GlowSync relies on device hardware tracking and open map libraries:
             </p>
             <ul class="space-y-2 pl-5 list-disc text-slate-600 text-sm leading-relaxed">
-                <li><strong>Distance Formulas:</strong> Distances displayed between Customers and Providers are derived
-                    directly using Flutter spatial packages (such as <code>latlong2</code> and <code>flutter_map</code>).
-                    Synkn does not guarantee the complete pinpoint accuracy of route paths, local terrain variations, or
-                    travel times.
+                <li><strong>Distance Formulas:</strong> Distances displayed are derived using Flutter spatial packages
+                    (such as <code>latlong2</code> and <code>flutter_map</code>).
                 </li>
                 <li><strong>Timezone Calendars:</strong> Booking scheduling relies on universal time variables computed
-                    via packages such as <code>table_calendar</code> and <code>intl</code>. Users are completely
-                    responsible for confirming their booking hour in relation to the local salon operational timezone
-                    guidelines.
+                    via packages such as <code>table_calendar</code> and <code>intl</code>. Users are responsible for
+                    confirming booking hours in relation to the salon's local timezone.
                 </li>
             </ul>
         </section>
@@ -256,24 +271,19 @@
             </p>
             <div class="space-y-3 pl-5 list-decimal text-slate-600 text-sm leading-relaxed">
                 <div>
-                    <strong>No Responsibility for Salon Quality, Licensing, or Operations:</strong> We do not employ,
-                    audit, evaluate, or monitor the performance, legal compliance, professional licensing status,
-                    sanitary guidelines, health codes, or skill level of Salon Providers. Customers assume full
-                    responsibility for verifying the qualifications, licensing, and liability coverage of any Provider.
-                    Any injury, chemical burn, scalp damage, allergic reaction, or bad service outcome is solely the
-                    legal and financial liability of the independent Provider.
+                    <strong>No Responsibility for Salon Quality:</strong> We do not employ or audit Salon Providers.
+                    Customers assume full
+                    responsibility for verifying the qualifications of any Provider. Any injury or bad service outcome
+                    is solely the
+                    legal liability of the independent Provider.
                 </div>
                 <div>
-                    <strong>No Responsibility for No-Shows:</strong> If a Salon storefront is locked/closed when you
-                    arrive, or if a Customer cancels, GlowSync is not liable for travel expenses, international
-                    conversion losses, lost time, or emotional distress.
+                    <strong>No Responsibility for No-Shows:</strong> If a Salon is closed or a Customer cancels,
+                    GlowSync is not liable for travel expenses or lost time.
                 </div>
                 <div>
-                    <strong>"As-Is" Software Provision:</strong> TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW,
-                    GLOWSYNC IS PROVIDED ON AN "AS-IS" AND "AS-AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND, EITHER
-                    EXPRESS OR IMPLIED. WE DISCLAIM ALL WARRANTIES, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR
-                    PURPOSE, AND NON-INFRINGEMENT. WE DO NOT GUARANTEE UNINTERRUPTED SERVER UPTIMES, CORRECT CLOUD
-                    ROUTING, OR PRECISE SYSTEM NOTIFICATIONS.
+                    <strong>"As-Is" Software Provision:</strong> GLOWSYNC IS PROVIDED ON AN "AS-IS" BASIS. WE DISCLAIM
+                    ALL WARRANTIES, INCLUDING MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
                 </div>
             </div>
         </section>
@@ -283,20 +293,14 @@
             <h2 class="text-2xl font-bold text-slate-800 pt-4 border-t border-slate-100">
                 6. Intellectual Property & User-Generated Content (UGC)</h2>
             <p class="text-slate-600 text-sm leading-relaxed">
-                All international copyrights, graphics, interfaces, UX designs, brand assets, logo marks, database
-                schemas, and proprietary framework code files associated with GlowSync belong exclusively to <strong>Synkn</strong>.
-                You may not decompile, reverse-engineer, mirror, scrape, or build derived marketplace clones of this
-                application without explicit, written operational contracts.
+                All brand assets, brand logos, and proprietary framework code files associated with GlowSync belong
+                exclusively to <strong>Synkn</strong>.
+                You may not reverse-engineer, scrape, or build derived clones of this application.
             </p>
             <p class="text-slate-600 text-sm leading-relaxed">
-                <strong>User Content License:</strong> By uploading, publishing, or displaying salon storefront details,
-                service menus, pricing estimations, text, or profile graphics ("User Content") within the platform,
-                Providers grant Synkn a non-exclusive, worldwide, royalty-free, perpetual license to host, display,
-                distribute, and reproduce such content strictly to facilitate the marketplace services. Providers
-                represent and warrant that they possess all legal rights and clear intellectual properties to upload
-                such content and that it does not violate any third-party copyrights. Synkn reserves the right to
-                moderate, flag, or remove any content deemed objectionable or inaccurate immediately to maintain mobile
-                platform integrity.
+                <strong>User Content License:</strong> By uploading salon details or pricing ("User Content"), Providers
+                grant Synkn a worldwide, royalty-free license to host and display such content strictly to facilitate
+                the marketplace services.
             </p>
         </section>
 
@@ -305,10 +309,8 @@
             <h2 class="text-2xl font-bold text-slate-800 pt-4 border-t border-slate-100">
                 7. Termination of Access</h2>
             <p class="text-slate-600 text-sm leading-relaxed">
-                We reserve the unilateral right to suspend, freeze, or permanently delete your app profile without prior
-                notification if you are found creating fraudulent bookings, listing non-existent salons, uploading
-                objectionable or infringing content, violating international cyber laws, or harassing service providers
-                or customers.
+                We reserve the unilateral right to suspend or delete your account if you are found creating fraudulent
+                bookings, listing non-existent salons, or violating international cyber laws.
             </p>
         </section>
 
@@ -317,16 +319,13 @@
             <h2 class="text-2xl font-bold text-slate-800 pt-4 border-t border-slate-100">
                 8. Governing Law, International Jurisdiction, and Severability</h2>
             <p class="text-slate-600 text-sm leading-relaxed">
-                These Terms of Use are governed by and construed in accordance with the laws of the state of <strong>Rajasthan,
-                India</strong>, without regard to conflict of law principles. Except where prohibited by local
-                international consumer protection laws (including those of the European Union or United Kingdom), any
-                legal action, dispute, or lawsuit arising out of or related to GlowSync must be filed exclusively in
-                local courts situated in Rajasthan, India.
+                These Terms of Use are governed by the laws of the state of <strong>Rajasthan, India</strong>. Any legal
+                action arising out of or related to GlowSync must be filed exclusively in local courts situated in
+                Rajasthan, India.
             </p>
             <p class="text-slate-600 text-sm leading-relaxed">
-                If any provision of these Terms is found to be unenforceable or invalid under any applicable regional or
-                international consumer protection laws, that provision will be limited or eliminated to the minimum
-                extent necessary, and the remaining provisions of these Terms will remain in full force and effect.
+                If any provision of these Terms is found to be unenforceable, that provision will be limited or
+                eliminated to the minimum extent necessary.
             </p>
         </section>
 
@@ -334,8 +333,7 @@
         <section class="space-y-4 pt-6 border-t border-teal-200">
             <h2 class="text-2xl font-bold text-slate-800">Contact & Global Disputes</h2>
             <p class="text-slate-600 text-sm">
-                If you have questions about these global Terms, wish to dispute a marketplace profile suspension, or
-                request manual data/account deletion, please reach out to us:
+                If you have questions about these global Terms, please reach out to us:
             </p>
             <ul class="list-disc list-inside space-y-1 pl-4 text-slate-600 text-sm font-medium">
                 <li>

@@ -140,7 +140,7 @@
         <!-- Document Header -->
         <header class="pb-4 border-b border-teal-200">
             <h1 class="text-4xl font-extrabold text-teal-700 mb-2">Privacy Policy</h1>
-            <p class="text-sm text-gray-500 font-medium">Last updated: July 10, 2026</p>
+            <p class="text-sm text-gray-500 font-medium">Last updated: August 21, 2026</p>
         </header>
 
         <!-- Introductory Statement -->
@@ -162,15 +162,30 @@
                 categories of information:
             </p>
             <ul class="space-y-2 pl-5 list-disc text-slate-600 text-sm leading-relaxed">
-                <li><strong>Account Parameters:</strong> Real names, verified active phone numbers, and profile emails.
+                <li><strong>Account Parameters:</strong> Real names, verified active phone numbers (dial code and
+                    number), and profile emails.
                 </li>
                 <li><strong>Precise Geolocation Data (Sensitive Personal Information):</strong> With your explicit
                     operating system consent, we access real-time GPS coordinates via Flutter frameworks to compute
-                    physical distances between users and local salon storefronts. This data is utilized strictly
-                    for real-time proximity matching and is not used to build historical location profiles.
+                    physical distances between users and local salon storefronts. This data is processed in the
+                    foreground
+                    to provide proximity matching and is not used to build historical location profiles.
                 </li>
-                <li><strong>System Identifiers:</strong> Secure tokens stored via device storage maps (such as <code>flutter_secure_storage</code>)
-                    to securely maintain active authenticated user sessions.
+                <li><strong>Billing & Subscription Data:</strong> As a SaaS platform, subscriptions are managed via the
+                    Google Play Billing system. We process transaction identifiers, purchase tokens, and subscription
+                    status to manage your access to business features. We do not store full payment card details on our
+                    servers.
+                </li>
+                <li><strong>System & Notification Identifiers:</strong>
+                    <ul class="mt-1 space-y-1 list-circle pl-5">
+                        <li>Secure tokens stored via <code>flutter_secure_storage</code> for session management.</li>
+                        <li>Device tokens for <strong>Push Notifications</strong> (via Firebase Messaging) to deliver
+                            booking updates and reminders.
+                        </li>
+                        <li>Local caching via <code>Hive</code> and <code>SharedPreferences</code> to improve app
+                            performance and offline accessibility.
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </section>
@@ -184,11 +199,13 @@
                 processing your data depend on the context:
             </p>
             <ul class="space-y-2 pl-5 list-disc text-slate-600 text-sm leading-relaxed">
-                <li><strong>Performance of a Contract:</strong> Processing account data is mandatory to deliver the
-                    marketplace coordination and booking calendar systems you request.
+                <li><strong>Performance of a Contract:</strong> Processing account data and billing status is mandatory
+                    to deliver the
+                    marketplace coordination, subscription management, and booking calendar systems you request.
                 </li>
-                <li><strong>Consent:</strong> Accessing your device's precise live location relies entirely on your
-                    explicit permission granted via system popup parameters. You can revoke this anytime in your device
+                <li><strong>Consent:</strong> Accessing your device's precise live location and delivering push
+                    notifications relies entirely on your
+                    explicit permission granted via system popup parameters. You can revoke these anytime in your device
                     settings.
                 </li>
                 <li><strong>Legitimate Interests:</strong> To detect app fraud, prevent malicious spam bookings, and
@@ -198,21 +215,32 @@
             <p class="text-slate-600 text-sm leading-relaxed mt-2">
                 <strong>Data Retention Window:</strong> We retain your personal data only for as long as your user
                 account remains active or as required to fulfill the business purposes outlined in this policy. Deleted
-                account data is purged completely within 72 hours, except where retention is legally mandated.
+                account data is purged completely within 72 hours, except where retention is legally mandated (e.g.,
+                financial records related to subscriptions).
             </p>
         </section>
 
-        <!-- 3. No Data Sale/Sharing -->
+        <!-- 3. Third-Party Disclosure -->
         <section class="space-y-4">
-            <h2 class="text-2xl font-bold text-slate-800 pt-4 border-t border-slate-100">3. Data Integrity & Third-Party
-                Disclosure</h2>
+            <h2 class="text-2xl font-bold text-slate-800 pt-4 border-t border-slate-100">3. Data Integrity & Service
+                Providers</h2>
             <p class="text-slate-600 text-sm leading-relaxed">
                 <strong>We do not sell, rent, or trade your personal data.</strong> GlowSync does not disclose your
-                information to third parties for their independent marketing or commercial purposes. We utilize
-                only necessary internal mapping and UI framework components (such as <code>flutter_map</code>,
-                <code>latlong2</code>, and <code>geolocator</code>) to render local service availability and
-                distances within the application.
+                information to third parties for their independent marketing purposes. We utilize the following
+                necessary service providers to operate the application:
             </p>
+            <ul class="space-y-2 pl-5 list-disc text-slate-600 text-sm leading-relaxed">
+                <li><strong>Google Firebase:</strong> Used for infrastructure, including secure authentication and
+                    delivery of push notifications.
+                </li>
+                <li><strong>Google Play Billing:</strong> Used to process secure payments and subscription lifecycle
+                    management.
+                </li>
+                <li><strong>Mapping Services:</strong> We use <code>flutter_map</code> and <code>geocoding</code> to
+                    render local service availability. Interaction with these components may involve sharing anonymized
+                    coordinates to fetch address details.
+                </li>
+            </ul>
         </section>
 
         <!-- 4. Global Consumer Privacy Rights -->
@@ -236,18 +264,28 @@
         <section class="space-y-4 bg-teal-50/10 border border-teal-100 p-6 rounded-xl">
             <h2 class="text-2xl font-bold text-teal-800">5. Google Play Compliant Data Deletion Protocol</h2>
             <p class="text-slate-700 text-sm leading-relaxed">
-                In strict adherence to Google Play Console Developer Account Deletion mandates, GlowSync provides an
-                integrated, automated web portal mechanism for purging structural user properties.
+                In strict adherence to Google Play Console requirements, GlowSync provides a direct account deletion
+                mechanism within the application.
             </p>
-            <div class="pt-2">
-                <a href="https://api.synkn.app/account-delete" target="_blank"
-                   class="inline-flex items-center px-4 py-2 bg-teal-600 hover:bg-teal-700 text-white font-semibold text-xs rounded-lg transition shadow-sm">
-                    🔗 Access Secure Account Purge Portal (https://api.synkn.app/account-delete)
-                </a>
+            <div class="space-y-2">
+                <p class="text-slate-700 text-sm font-semibold">How to Delete Your Account:</p>
+                <ol class="list-decimal list-inside text-slate-700 text-sm space-y-1 pl-2">
+                    <li>Open the GlowSync app and navigate to your <strong>Profile</strong>.</li>
+                    <li>Scroll down to the <strong>Danger Zone</strong> section.</li>
+                    <li>Select <strong>Delete Account</strong>.</li>
+                    <li>Enter your <strong>current password</strong> to verify your identity and confirm permanent
+                        deletion.
+                    </li>
+                </ol>
             </div>
-            <p class="text-xs text-slate-500 mt-2 leading-relaxed">
-                Executing this sequence triggers an automated cascade deleting your email, name, phone tracking metrics,
-                and historical marketplace records directly from active production clusters within 72 hours.
+            <p class="text-slate-700 text-sm italic mt-4">
+                <strong>Important Note:</strong> Deleting your account does not automatically cancel active
+                subscriptions processed via Google Play. You must cancel renewals directly through your Google Play
+                Store account settings.
+            </p>
+            <p class="text-xs text-slate-500 mt-4 leading-relaxed">
+                Submitting a deletion request triggers an automated process that purges your email, name, phone number,
+                and historical marketplace records from our production servers within 72 hours.
             </p>
         </section>
 
