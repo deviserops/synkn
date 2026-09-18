@@ -140,191 +140,194 @@
         <!-- Document Header -->
         <header class="pb-4 border-b border-teal-200">
             <h1 class="text-4xl font-extrabold text-teal-700 mb-2">Privacy Policy</h1>
-            <p class="text-sm text-gray-500 font-medium">Last updated: August 21, 2026</p>
+            <p class="text-sm text-gray-500 font-medium">Last updated: September 18, 2026</p>
         </header>
 
         <!-- Introductory Statement -->
         <div class="text-slate-700 space-y-4 text-base leading-relaxed">
             <p>
-                At <strong>GlowSync</strong>, accessible via our mobile application and our web services hosted by
+                At <strong>GlowSync</strong>, accessible via our mobile application and web services hosted by
                 <strong>Synkn</strong> ("Developer", "We", "Us", or "Our"), user privacy is a paramount priority.
-                This Global Privacy Policy outlines how we collect, process, secure, and disclose your data in
-                compliance with international privacy laws, including the General Data Protection Regulation (<strong>GDPR</strong>),
-                the California Consumer Privacy Act (<strong>CCPA/CPRA</strong>), and applicable regional digital acts.
+                This Privacy Policy outlines how we collect, process, secure, and disclose data across our platform, which encompasses our mobile application for salon owners and automatically generated public web booking pages accessible to end-clients.
             </p>
         </div>
 
-        <!-- 1. Data Collection Categories -->
+        <!-- 1. Information We Collect -->
         <section class="space-y-4">
             <h2 class="text-2xl font-bold text-slate-800 pt-4 border-t border-slate-100">1. Information We Collect</h2>
             <p class="text-slate-600 text-sm leading-relaxed">
-                To facilitate a localized marketplace between Customers and Providers, GlowSync collects the following
-                categories of information:
+                To provide business management tools, direct in-app appointment scheduling, specialist roster management, and public web booking portals, GlowSync processes the following categories of data:
             </p>
             <ul class="space-y-2 pl-5 list-disc text-slate-600 text-sm leading-relaxed">
-                <li><strong>Account Parameters:</strong> Real names, verified active phone numbers (dial code and
-                    number), and profile emails.
-                </li>
-                <li><strong>Precise Geolocation Data (Sensitive Personal Information):</strong> With your explicit
-                    operating system consent, we access real-time GPS coordinates via Flutter frameworks to compute
-                    physical distances between users and local salon storefronts. This data is processed in the
-                    foreground
-                    to provide proximity matching and is not used to build historical location profiles.
-                </li>
-                <li><strong>Billing & Subscription Data:</strong> As a SaaS platform, subscriptions are managed via the
-                    Google Play Billing system. We process transaction identifiers, purchase tokens, and subscription
-                    status to manage your access to business features. We do not store full payment card details on our
-                    servers.
-                </li>
-                <li><strong>System & Notification Identifiers:</strong>
+                <li><strong>Salon Owner Account Data:</strong> Real names, verified active phone numbers (dial code and number), business emails, salon business names, business operation hours, and address parameters.</li>
+                <li><strong>Staff &amp; Specialist Profiles:</strong> Specialist names, working schedules, break times, and service assignments configured by the salon owner.</li>
+                <li><strong>Customer &amp; Appointment Data:</strong> Client names, contact numbers, direct in-app appointment entries, and appointment logs managed by salon owners.</li>
+                <li><strong>Public Web Booking Submissions:</strong> Information submitted by end-clients through a salon's auto-generated public web page URL—including requested time slots, service selections, specialist preferences, client names, and contact phone numbers.</li>
+                <li><strong>Salon Location Data (Sensitive Personal Information):</strong> With explicit operating system permissions, we process business address data and geographic coordinates via Flutter frameworks to display salon storefronts and mapping details on public web booking pages.</li>
+                <li><strong>In-App Subscription Status:</strong> SaaS access tiers for salon management features are processed through Google Play In-App Purchases. We store only transaction status tokens and subscription tier IDs. We do not collect, process, or store financial payment details, cards, or bank records on our servers. All client appointments booked via the app or web portal are settled physically via cash directly at the salon business location.</li>
+                <li><strong>System &amp; Identifier Storage:</strong>
                     <ul class="mt-1 space-y-1 list-circle pl-5">
-                        <li>Secure tokens stored via <code>flutter_secure_storage</code> for session management.</li>
-                        <li>Device tokens for <strong>Push Notifications</strong> (via Firebase Messaging) to deliver
-                            booking updates and reminders.
-                        </li>
-                        <li>Local caching via <code>Hive</code> and <code>SharedPreferences</code> to improve app
-                            performance and offline accessibility.
-                        </li>
+                        <li>Secure tokens stored via <code>flutter_secure_storage</code> for active session management.</li>
+                        <li>Device tokens for <strong>Push Notifications</strong> (via Firebase Messaging) to alert salon owners of new incoming booking requests and system updates.</li>
+                        <li>Local caching via <code>Hive</code> and <code>SharedPreferences</code> for app responsiveness and offline functionality.</li>
                     </ul>
                 </li>
             </ul>
         </section>
 
-        <!-- 2. Legal Basis & Data Retention -->
+        <!-- 2. Core Legal Basis & Data Retention -->
         <section class="space-y-4">
-            <h2 class="text-2xl font-bold text-slate-800 pt-4 border-t border-slate-100">2. Legal Basis for Processing &
-                Data Retention</h2>
+            <h2 class="text-2xl font-bold text-slate-800 pt-4 border-t border-slate-100">2. Legal Basis for Processing &amp; Data Retention</h2>
             <p class="text-slate-600 text-sm leading-relaxed">
-                If you reside within the European Economic Area (EEA) or United Kingdom, our legal grounds for
-                processing your data depend on the context:
+                Our legal grounds for processing personal data depend on the specific feature and user role:
             </p>
             <ul class="space-y-2 pl-5 list-disc text-slate-600 text-sm leading-relaxed">
-                <li><strong>Performance of a Contract:</strong> Processing account data and billing status is mandatory
-                    to deliver the
-                    marketplace coordination, subscription management, and booking calendar systems you request.
-                </li>
-                <li><strong>Consent:</strong> Accessing your device's precise live location and delivering push
-                    notifications relies entirely on your
-                    explicit permission granted via system popup parameters. You can revoke these anytime in your device
-                    settings.
-                </li>
-                <li><strong>Legitimate Interests:</strong> To detect app fraud, prevent malicious spam bookings, and
-                    monitor server health.
-                </li>
+                <li><strong>Performance of a Contract:</strong> Operating salon owner accounts, hosting auto-generated public web pages, maintaining specialist availability calendars, and processing direct/web appointment bookings.</li>
+                <li><strong>Consent:</strong> Accessing location coordinates for public web mapping, sending transactional push notifications, and processing public booking requests submitted by end-clients.</li>
+                <li><strong>Legitimate Interests:</strong> Preventing automated booking spam on public web links, ensuring server infrastructure stability, and securing backend endpoints.</li>
             </ul>
             <p class="text-slate-600 text-sm leading-relaxed mt-2">
-                <strong>Data Retention Window:</strong> We retain your personal data only for as long as your user
-                account remains active or as required to fulfill the business purposes outlined in this policy. Deleted
-                account data is purged completely within 72 hours, except where retention is legally mandated (e.g.,
-                financial records related to subscriptions).
+                <strong>Data Retention Window:</strong> Active salon records, specialist profiles, and client appointment histories are retained while the business account remains active. Executing an account deletion completely purges all associated production server records within 72 hours. Because GlowSync does not process payments or collect financial transactions, no financial or billing tax records are retained following account deletion.
             </p>
         </section>
 
-        <!-- 3. Third-Party Disclosure -->
+        <!-- 3. Infrastructure & Third-Party Sharing -->
         <section class="space-y-4">
-            <h2 class="text-2xl font-bold text-slate-800 pt-4 border-t border-slate-100">3. Data Integrity & Service
-                Providers</h2>
+            <h2 class="text-2xl font-bold text-slate-800 pt-4 border-t border-slate-100">3. Data Sharing &amp; Cross-Border Transfers</h2>
             <p class="text-slate-600 text-sm leading-relaxed">
-                <strong>We do not sell, rent, or trade your personal data.</strong> GlowSync does not disclose your
-                information to third parties for their independent marketing purposes. We utilize the following
-                necessary service providers to operate the application:
+                <strong>We do not sell, rent, or trade personal or customer data.</strong> Data is shared exclusively with necessary service infrastructure providers:
             </p>
             <ul class="space-y-2 pl-5 list-disc text-slate-600 text-sm leading-relaxed">
-                <li><strong>Google Firebase:</strong> Used for infrastructure, including secure authentication and
-                    delivery of push notifications.
-                </li>
-                <li><strong>Google Play Billing:</strong> Used to process secure payments and subscription lifecycle
-                    management.
-                </li>
-                <li><strong>Mapping Services:</strong> We use <code>flutter_map</code> and <code>geocoding</code> to
-                    render local service availability. Interaction with these components may involve sharing anonymized
-                    coordinates to fetch address details.
-                </li>
+                <li><strong>DigitalOcean:</strong> Primary cloud infrastructure host for databases, API backends, application business logic, and public web booking page hosting.</li>
+                <li><strong>Google Firebase:</strong> Used strictly for transmitting transactional push notifications and real-time booking alerts to salon owner devices.</li>
+                <li><strong>Google Play Billing:</strong> Used to manage in-app SaaS subscriptions and access tiers.</li>
+                <li><strong>Mapping Services:</strong> We use <code>flutter_map</code> and <code>geocoding</code> to process address data and display salon locations on public booking pages.</li>
+            </ul>
+            <p class="text-slate-600 text-sm leading-relaxed mt-2">
+                <strong>Cross-Border Data Transfers:</strong> Data hosted across DigitalOcean cloud clusters and Firebase messaging servers may be processed internationally. We enforce Standard Contractual Clauses (SCCs) and encrypted transport layers to safeguard cross-border transfers.
+            </p>
+        </section>
+
+        <!-- 4. Global Privacy Rights -->
+        <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-slate-800 pt-4 border-t border-slate-100">4. Your Global Privacy Rights</h2>
+            <p class="text-slate-600 text-sm leading-relaxed">
+                Regardless of geographic location, Synkn extends core privacy controls to all business owners and web page users:
+            </p>
+            <ul class="space-y-2 pl-5 list-disc text-slate-600 text-sm leading-relaxed">
+                <li><strong>Right to Access &amp; Portability:</strong> Request copies of business profiles, specialist records, or web booking logs.</li>
+                <li><strong>Right to Rectification:</strong> Salon owners can edit business hours, specialist availability, services, and appointment listings directly within the app.</li>
+                <li><strong>Right to Erasure:</strong> Request permanent deletion of business profiles, specialist lists, or public booking submissions.</li>
+                <li><strong>Right to Withdraw Consent:</strong> Revoke device location or notification permissions at any time via operating system settings.</li>
             </ul>
         </section>
 
-        <!-- 4. Global Consumer Privacy Rights -->
-        <section class="space-y-4">
-            <h2 class="text-2xl font-bold text-slate-800 pt-4 border-t border-slate-100">4. Your Global Privacy
-                Rights</h2>
+        <!-- 5. Jurisdiction-Specific Terms -->
+        <section class="space-y-6">
+            <h2 class="text-2xl font-bold text-slate-800 pt-4 border-t border-slate-100">5. Jurisdiction-Specific Provisions</h2>
             <p class="text-slate-600 text-sm leading-relaxed">
-                Regardless of your residency, Synkn honors comprehensive consumer rights regarding digital data:
+                Additional region-specific statutory terms apply to businesses and end-clients operating in these regions:
             </p>
-            <ul class="space-y-2 pl-5 list-disc text-slate-600 text-sm leading-relaxed">
-                <li><strong>The Right to Erasure (Deletion):</strong> You have the absolute right to clear your entire
-                    cloud identity profile from our database.
-                </li>
-                <li><strong>The Right to Access & Portability:</strong> You may request a plain copy of the profile
-                    telemetry variables associated with your mobile identity.
-                </li>
-            </ul>
+
+            <!-- United States -->
+            <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-2">
+                <h3 class="text-lg font-bold text-slate-800">5.1 United States (CCPA / CPRA / COPPA)</h3>
+                <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                    <li><strong>No Sale or Sharing:</strong> We do not sell personal data or share user information for cross-context behavioral marketing.</li>
+                    <li><strong>Sensitive Location Data:</strong> Business location data is processed strictly to render mapping views on public web booking portals.</li>
+                    <li><strong>COPPA Compliance:</strong> GlowSync mobile applications and public web booking portals are not directed to children under 13.</li>
+                </ul>
+            </div>
+
+            <!-- European Union & UK -->
+            <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-2">
+                <h3 class="text-lg font-bold text-slate-800">5.2 European Economic Area (EEA) &amp; United Kingdom (GDPR / UK GDPR)</h3>
+                <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                    <li><strong>Supervisory Complaints:</strong> Users have the right to lodge complaints with local Data Protection Authorities or the UK ICO.</li>
+                    <li><strong>Age Threshold:</strong> Services are not intended for individuals under 16 without verifiable parental consent.</li>
+                </ul>
+            </div>
+
+            <!-- India -->
+            <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-2">
+                <h3 class="text-lg font-bold text-slate-800">5.3 India (Digital Personal Data Protection Act - DPDP)</h3>
+                <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                    <li><strong>Consent-Based Grounds:</strong> Personal data submitted through app interfaces or public web forms is processed based on explicit consent or statutory provisions.</li>
+                    <li><strong>Right to Nominate:</strong> Users may nominate a representative to exercise privacy rights in the event of death or incapacity.</li>
+                    <li><strong>Grievance Officer:</strong> Submit grievances to <a href="mailto:glowsync@synkn.app" class="text-teal-600 underline">glowsync@synkn.app</a> for resolution within statutory timelines.</li>
+                </ul>
+            </div>
+
+            <!-- Saudi Arabia & UAE -->
+            <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-2">
+                <h3 class="text-lg font-bold text-slate-800">5.4 Saudi Arabia (PDPL) &amp; UAE (Federal Law No. 45)</h3>
+                <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                    <li><strong>Data Safeguards:</strong> External processing on DigitalOcean and Firebase nodes complies with Saudi PDPL and UAE cross-border transfer standards.</li>
+                </ul>
+            </div>
+
+            <!-- Canada -->
+            <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-2">
+                <h3 class="text-lg font-bold text-slate-800">5.5 Canada (PIPEDA)</h3>
+                <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                    <li><strong>Cross-Border Notice:</strong> Data processed outside Canada may be subject to foreign law enforcement access under lawful authority.</li>
+                </ul>
+            </div>
+
+            <!-- Australia -->
+            <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-2">
+                <h3 class="text-lg font-bold text-slate-800">5.6 Australia (Privacy Act 1988 / APPs)</h3>
+                <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                    <li><strong>Overseas Transfers:</strong> Cross-border data infrastructure disclosures adhere to Australian Privacy Principle 8 (APP 8).</li>
+                </ul>
+            </div>
         </section>
 
-        <!-- 5. Compliant Account Deletion Flow -->
-        <section class="space-y-4 bg-teal-50/10 border border-teal-100 p-6 rounded-xl">
-            <h2 class="text-2xl font-bold text-teal-800">5. Google Play Compliant Data Deletion Protocol</h2>
+        <!-- 6. Account Deletion Protocol -->
+        <section class="space-y-4 bg-teal-50/20 border border-teal-100 p-6 rounded-xl">
+            <h2 class="text-2xl font-bold text-teal-800">6. Google Play Compliant Account &amp; Data Deletion Protocol</h2>
             <p class="text-slate-700 text-sm leading-relaxed">
-                In strict adherence to Google Play Console requirements, GlowSync provides a direct account deletion
-                mechanism within the application.
+                In compliance with Google Play Store rules, GlowSync features a direct account deletion option inside the app:
             </p>
             <div class="space-y-2">
-                <p class="text-slate-700 text-sm font-semibold">How to Delete Your Account:</p>
+                <p class="text-slate-700 text-sm font-semibold">Steps to Delete Account:</p>
                 <ol class="list-decimal list-inside text-slate-700 text-sm space-y-1 pl-2">
-                    <li>Open the GlowSync app and navigate to your <strong>Profile</strong>.</li>
-                    <li>Scroll down to the <strong>Danger Zone</strong> section.</li>
-                    <li>Select <strong>Delete Account</strong>.</li>
-                    <li>Enter your <strong>current password</strong> to verify your identity and confirm permanent
-                        deletion.
+                    <li>Open GlowSync and navigate to <strong>Profile</strong>.</li>
+                    <li>Scroll to the <strong>Danger Zone</strong> section.</li>
+                    <li>Tap <strong>Delete Account</strong>.</li>
+                    <li>
+                        Confirm by entering your <strong>current password</strong>.
+                        <span class="block text-slate-600 text-xs mt-1 pl-4">
+                        <em>Note for Google Authentication Users:</em> If you originally registered or signed in using Google Sign-In, you must first create an account password via <strong>Profile &gt; Account / Change Password</strong> before executing account deletion.
+                    </span>
                     </li>
                 </ol>
             </div>
             <p class="text-slate-700 text-sm italic mt-4">
-                <strong>Important Note:</strong> Deleting your account does not automatically cancel active
-                subscriptions processed via Google Play. You must cancel renewals directly through your Google Play
-                Store account settings.
+                <strong>Note on Subscriptions:</strong> Deleting an account purges operational data from our servers but does not cancel active Google Play subscriptions. Subscriptions must be cancelled in your Google Play Store account settings.
             </p>
             <p class="text-xs text-slate-500 mt-4 leading-relaxed">
-                Submitting a deletion request triggers an automated process that purges your email, name, phone number,
-                and historical marketplace records from our production servers within 72 hours.
+                Account deletion requests automatically purge business profiles, specialist rosters, business timings, and public web page configurations from DigitalOcean servers within 72 hours.
             </p>
         </section>
 
-        <!-- 6. Children's Global Data Compliance -->
+        <!-- 7. Policy Changes -->
         <section class="space-y-4">
-            <h2 class="text-2xl font-bold text-slate-800 pt-4 border-t border-slate-100">6. Children's Privacy
-                (COPPA/GDPR Compliance)</h2>
+            <h2 class="text-2xl font-bold text-slate-800 pt-4 border-t border-slate-100">7. Policy Updates</h2>
             <p class="text-slate-600 text-sm leading-relaxed">
-                GlowSync does not knowingly solicit, target, or collect structural telemetry identifiers from
-                individuals under the age of 13 (or 16 within the EEA). If we discover that an underage individual has
-                generated an account, we will purge those specific database rows immediately.
+                We may update this Privacy Policy to reflect app updates or regulatory changes. Revisions will be indicated by changing the "Last updated" date at the header.
             </p>
         </section>
 
-        <!-- 7. Updates to this Policy -->
-        <section class="space-y-4">
-            <h2 class="text-2xl font-bold text-slate-800 pt-4 border-t border-slate-100">7. Changes to This Global
-                Policy</h2>
-            <p class="text-slate-600 text-sm leading-relaxed">
-                We may refresh our privacy architecture from time to time to match global regulatory shifts or updated
-                Flutter SDK versions. We will indicate structural changes by updating the "Last Updated" date at the
-                absolute header of this document.
-            </p>
-        </section>
-
-        <!-- 8. Contact & Verification -->
+        <!-- 8. Contact -->
         <section class="space-y-4 pt-6 border-t border-teal-200">
-            <h2 class="text-2xl font-bold text-slate-800">8. Privacy Contact & Data Disputes</h2>
+            <h2 class="text-2xl font-bold text-slate-800">8. Privacy Contact &amp; Grievance</h2>
             <p class="text-slate-600 text-sm">
-                To execute your global consumer rights, appeal a data processing sequence, or seek manual data lookups,
-                please contact our dedicated Privacy Compliance Team.
+                For questions, manual deletion requests, or privacy inquiries concerning public web booking pages, contact us at:
             </p>
             <ul class="list-disc list-inside space-y-1 pl-4 text-slate-600 text-sm font-medium">
-                <li>Privacy Compliance Email: <a href="mailto:glowsync@synkn.app"
-                                                 class="text-teal-600 hover:text-teal-800 underline transition">glowsync@synkn.app</a>
-                </li>
-                <li>Official Support Portal: <a href="/contact-us/" target="_blank"
-                                                class="text-teal-600 hover:text-teal-800 underline transition">
-                    Contact Us</a></li>
+                <li>Email: <a href="mailto:glowsync@synkn.app" class="text-teal-600 hover:text-teal-800 underline transition">glowsync@synkn.app</a></li>
+                <li>Support Web Endpoint: <a href="/contact-us/" target="_blank" class="text-teal-600 hover:text-teal-800 underline transition">Contact Us</a></li>
             </ul>
         </section>
     </div>
