@@ -1,6 +1,20 @@
 # https://www.robotstxt.org/robotstxt.html
 
+# Allow all traditional search engines and AI crawlers
 User-agent: *
+Allow: /
+
+# Specifically highlight your LLM context file for AI discovery
+User-agent: GPTBot
+Allow: /llms.txt
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /llms.txt
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /llms.txt
 Allow: /
 
 # Host & Sitemap Locations
