@@ -164,6 +164,7 @@
             </p>
             <ul class="space-y-2 pl-5 list-disc text-slate-600 text-sm leading-relaxed">
                 <li><strong>Salon Owner Account Data:</strong> Real names, verified active phone numbers (dial code and number), business emails, salon business names, business operation hours, and address parameters.</li>
+                <li><strong>Google Sign-In Data:</strong> If you choose to sign in with Google, we receive your name, email address, and Google account identifier from Google to create and authenticate your account. We do not receive your Google password.</li>
                 <li><strong>Staff &amp; Specialist Profiles:</strong> Specialist names, working schedules, break times, and service assignments configured by the salon owner.</li>
                 <li><strong>Customer &amp; Appointment Data:</strong> Client names, contact numbers, direct in-app appointment entries, and appointment logs managed by salon owners.</li>
                 <li><strong>Public Web Booking Submissions:</strong> Information submitted by end-clients through a salon's auto-generated public web page URL—including requested time slots, service selections, specialist preferences, client names, and contact phone numbers.</li>
@@ -176,6 +177,7 @@
                         <li>Local caching via <code>Hive</code> and <code>SharedPreferences</code> for app responsiveness and offline functionality.</li>
                     </ul>
                 </li>
+                <li><strong>No Analytics or Advertising Trackers:</strong> GlowSync and its public booking pages do not use analytics tools, advertising trackers, or third-party tracking cookies. Only strictly necessary technical cookies (such as security and form-protection tokens) may be used to keep the service working securely.</li>
             </ul>
         </section>
 
@@ -191,7 +193,10 @@
                 <li><strong>Legitimate Interests:</strong> Preventing automated booking spam on public web links, ensuring server infrastructure stability, and securing backend endpoints.</li>
             </ul>
             <p class="text-slate-600 text-sm leading-relaxed mt-2">
-                <strong>Data Retention Window:</strong> Active salon records, specialist profiles, and client appointment histories are retained while the business account remains active. Executing an account deletion completely purges all associated production server records within 72 hours. Because GlowSync does not process payments or collect financial transactions, no financial or billing tax records are retained following account deletion.
+                <strong>Roles &amp; Responsibilities:</strong> Salon owners decide which customer and appointment data they enter into GlowSync and are responsible for having a lawful basis to do so. For that customer data, Synkn acts on the salon owner's behalf to provide the service. Information an end-client submits through a salon's public booking page is made available to that salon so it can fulfil the booking. For salon owner account data, Synkn determines the purposes of processing.
+            </p>
+            <p class="text-slate-600 text-sm leading-relaxed mt-2">
+                <strong>Data Retention Window:</strong> Active salon records, specialist profiles, and client appointment histories are retained while the business account remains active. Executing an account deletion completely purges all associated production server records within 72 hours. Where we maintain database backups, they are kept only for a limited rolling period, after which they are overwritten, and data deleted from production is not restored from them. Because GlowSync does not process payments or collect financial transactions, no financial or billing tax records are retained following account deletion.
             </p>
         </section>
 
@@ -204,11 +209,12 @@
             <ul class="space-y-2 pl-5 list-disc text-slate-600 text-sm leading-relaxed">
                 <li><strong>DigitalOcean:</strong> Primary cloud infrastructure host for databases, API backends, application business logic, and public web booking page hosting.</li>
                 <li><strong>Google Firebase:</strong> Used strictly for transmitting transactional push notifications and real-time booking alerts to salon owner devices.</li>
+                <li><strong>Google Sign-In:</strong> Used, if you choose it, to sign in to your account with your Google account.</li>
                 <li><strong>Google Play Billing:</strong> Used to manage in-app SaaS subscriptions and access tiers.</li>
                 <li><strong>Mapping Services:</strong> We use <code>flutter_map</code> and <code>geocoding</code> to process address data and display salon locations on public booking pages.</li>
             </ul>
             <p class="text-slate-600 text-sm leading-relaxed mt-2">
-                <strong>Cross-Border Data Transfers:</strong> Data hosted across DigitalOcean cloud clusters and Firebase messaging servers may be processed internationally. We enforce Standard Contractual Clauses (SCCs) and encrypted transport layers to safeguard cross-border transfers.
+                <strong>Cross-Border Data Transfers:</strong> Data hosted across DigitalOcean cloud clusters and Firebase messaging servers may be processed internationally. We rely on encrypted transport layers and on the contractual safeguards of our infrastructure providers, including Standard Contractual Clauses where applicable, to protect cross-border transfers.
             </p>
         </section>
 
@@ -266,7 +272,7 @@
             <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-2">
                 <h3 class="text-lg font-bold text-slate-800">5.4 Saudi Arabia (PDPL) &amp; UAE (Federal Law No. 45)</h3>
                 <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1">
-                    <li><strong>Data Safeguards:</strong> External processing on DigitalOcean and Firebase nodes complies with Saudi PDPL and UAE cross-border transfer standards.</li>
+                    <li><strong>Data Safeguards:</strong> Your data is processed on DigitalOcean and Firebase infrastructure outside your country. We protect it with encrypted transport and access controls, and process it in line with the cross-border transfer requirements of the Saudi PDPL and UAE Federal Law No. 45 to the extent applicable.</li>
                 </ul>
             </div>
 
@@ -282,7 +288,7 @@
             <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-2">
                 <h3 class="text-lg font-bold text-slate-800">5.6 Australia (Privacy Act 1988 / APPs)</h3>
                 <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1">
-                    <li><strong>Overseas Transfers:</strong> Cross-border data infrastructure disclosures adhere to Australian Privacy Principle 8 (APP 8).</li>
+                    <li><strong>Overseas Transfers:</strong> Cross-border data infrastructure disclosures are made in line with Australian Privacy Principle 8 (APP 8).</li>
                 </ul>
             </div>
 
@@ -399,7 +405,7 @@
         <section class="space-y-4">
             <h2 class="text-2xl font-bold text-slate-800 pt-4 border-t border-slate-100">7. Policy Updates</h2>
             <p class="text-slate-600 text-sm leading-relaxed">
-                We may update this Privacy Policy to reflect app updates or regulatory changes. Revisions will be indicated by changing the "Last updated" date at the header.
+                We may update this Privacy Policy to reflect app updates or regulatory changes. Revisions will be indicated by changing the "Last updated" date at the header. For material changes, we will also notify you through an in-app notice or by email.
             </p>
         </section>
 
