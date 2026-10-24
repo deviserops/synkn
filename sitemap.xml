@@ -7,12 +7,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://synkn.app/battery-alarm/privacy-policy/</loc>
-    <lastmod>2026-06-13T11:21:12.591Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://synkn.app/</loc>
     <lastmod>2026-06-13T11:21:27.938Z</lastmod>
     <changefreq>monthly</changefreq>
@@ -37,20 +31,8 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://synkn.app/focus-desk/privacy-policy/</loc>
-    <lastmod>2026-06-13T12:10:45.409Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://synkn.app/sync-zone/</loc>
     <lastmod>2026-06-13T12:17:44.127Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://synkn.app/slab-stack/privacy-policy/</loc>
-    <lastmod>2026-06-30T10:47:13.826Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -67,38 +49,8 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://synkn.app/nda-and-confidentiality-policy/</loc>
-    <lastmod>2026-07-02T08:03:19.728Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://synkn.app/privacy-policy/</loc>
-    <lastmod>2026-07-02T09:05:55.401Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://synkn.app/salon-hour/privacy-policy/</loc>
-    <lastmod>2026-07-03T12:30:28.100Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://synkn.app/salon-hour/terms-of-use/</loc>
-    <lastmod>2026-07-03T12:44:22.272Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://synkn.app/paint-hue/</loc>
     <lastmod>2026-07-10T07:48:43.489Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://synkn.app/paint-hue/privacy-policy/</loc>
-    <lastmod>2026-07-10T07:48:43.494Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
