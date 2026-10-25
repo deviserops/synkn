@@ -22,7 +22,7 @@
 - [Backend Systems Engineering & High-Performance Architecture Portfolio](https://synkn.app/case-study/): A detailed technical catalog of high-availability backend APIs, multi-tenant databases, transactional ledger structures, and developer libraries built by synkn.app.
 
 ## All Website Pages 
-- [Contact Synkn - Get in Touch for Digital Solutions](https://synkn.app/contact-us/): Reach out to Synkn for questions, support, or to discuss your next project. We provide innovative digital tools and custom software solutions.
+- [Contact Synkn](https://synkn.app/contact-us/): Questions, app support, project collaborations and partnerships. Email contact@synkn.app or use the contact form.
 
 ## Optional
 - [Battery Alarm App Privacy Policy](https://synkn.app/battery-alarm/privacy-policy/)
