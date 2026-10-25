@@ -1,7 +1,7 @@
 {
   "name": "Synkn",
   "short_name": "Synkn",
-  "description": "Innovative Digital Tools &amp; Custom Software Solutions",
+  "description": "Synkn builds free Android apps and browser-based tools, and offers custom mobile, web and backend development.",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
